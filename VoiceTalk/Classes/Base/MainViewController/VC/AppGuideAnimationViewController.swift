@@ -8,6 +8,8 @@
 
 import UIKit
 
+typealias switchRootClosure=()->Void
+
 class AppGuideAnimationViewController: AnimatedPagingScrollViewController {
     private let star = UIImageView(image: UIImage(named: "Star"))
     private let iftttPresents = UIImageView(image: UIImage(named: "IFTTTPresents"))
@@ -29,6 +31,8 @@ class AppGuideAnimationViewController: AnimatedPagingScrollViewController {
     private let page3Text = UIImageView(image: UIImage(named: "Page3Text"))
     
     private var airplaneFlyingAnimation : PathPositionAnimation?
+    
+    public var switchVC : switchRootClosure?;
     
     override func numberOfPages() -> Int {
         // Tell the scroll view how many pages it has
@@ -74,6 +78,9 @@ class AppGuideAnimationViewController: AnimatedPagingScrollViewController {
     
     @objc func switchRootVC() {
         printLog("切换VC");
+        if self.switchVC != nil {
+            self.switchVC!();
+        }
     }
     
     private func configureAnimations() {

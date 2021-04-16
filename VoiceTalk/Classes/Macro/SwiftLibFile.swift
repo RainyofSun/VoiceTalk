@@ -11,3 +11,4 @@ import Foundation
  * https://www.cnblogs.com/sundaysme/articles/12051836.html ---> HandyJSON使用
  */
 @_exported import HandyJSON
+@_exported import Reachability

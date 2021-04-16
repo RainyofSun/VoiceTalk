@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
         self.window?.backgroundColor = UIColor.white;
         self.window?.makeKeyAndVisible();
-        self.window?.rootViewController = AppGuideAnimationViewController();
+        self.window?.rootViewController = VTMainViewController();
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.default;
     }
 
