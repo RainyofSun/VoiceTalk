@@ -30,7 +30,7 @@ def all_Pods
 # 自定义的进度加载动画
 #   pod 'FillableLoaders'
 # 数据map映射
-    pod 'ObjectMapper'
+    pod 'HandyJSON'
 # 数据存储 UserDefaults
     pod 'SwiftyUserDefaults'
 # 字符串扩展
@@ -92,7 +92,8 @@ def all_Pods
     pod 'SwiftyStoreKit'
 # App间跳转、DeepLink
     pod 'Appz'
-    
+# SVG
+    pod 'SVGKit'
 end
 
 target 'VoiceTalk' do
