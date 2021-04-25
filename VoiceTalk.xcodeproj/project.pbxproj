@@ -44,6 +44,21 @@
 		22142C832629317900C3499C /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22142C822629317900C3499C /* MacroFile.swift */; };
 		22142C85262961F000C3499C /* ServiceInterviceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22142C84262961F000C3499C /* ServiceInterviceFile.swift */; };
 		22142C87262963CA00C3499C /* ServiceAddressFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22142C86262963CA00C3499C /* ServiceAddressFile.swift */; };
+		22192DED262D8C8F0018E7B7 /* VTHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22192DEC262D8C8F0018E7B7 /* VTHomePageViewController.swift */; };
+		22192DF0262D8CB30018E7B7 /* VTZoneDynamicPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22192DEF262D8CB30018E7B7 /* VTZoneDynamicPageViewController.swift */; };
+		22192DF3262D8CC20018E7B7 /* VTChatPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22192DF2262D8CC20018E7B7 /* VTChatPageViewController.swift */; };
+		22192DF6262D8CD00018E7B7 /* VTMinePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22192DF5262D8CD00018E7B7 /* VTMinePageViewController.swift */; };
+		22192DFA262D8D160018E7B7 /* VTTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22192DF9262D8D160018E7B7 /* VTTabbarViewController.swift */; };
+		22192E00262D92800018E7B7 /* SVGResBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 22192DFF262D92800018E7B7 /* SVGResBundle.bundle */; };
+		221D0A5D2632706C009F53DA /* VTBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0A5C2632706C009F53DA /* VTBaseNavViewController.swift */; };
+		221D0BC02632A8CF009F53DA /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0BBF2632A8CF009F53DA /* ColorFile.swift */; };
+		221D0BC32632AEF4009F53DA /* BundlePathFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0BC22632AEF4009F53DA /* BundlePathFile.swift */; };
+		221D0BE826351076009F53DA /* VTMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0BE726351076009F53DA /* VTMainViewModel.swift */; };
+		221D0BEB263514CE009F53DA /* UserDefaultsKeyFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0BEA263514CE009F53DA /* UserDefaultsKeyFile.swift */; };
+		221D0C10263520C2009F53DA /* VTHudTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0C0F263520C2009F53DA /* VTHudTool.swift */; };
+		221D0C3B2635221E009F53DA /* SwiftProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0C3A2635221D009F53DA /* SwiftProgressHUD.swift */; };
+		221D0C3F26354355009F53DA /* VTUserInfoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0C3E26354355009F53DA /* VTUserInfoCache.swift */; };
+		221D0C4226354A18009F53DA /* VTGlobalStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0C4126354A18009F53DA /* VTGlobalStatusModel.swift */; };
 		225F4E3B26286635004FB177 /* VTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F4E3A26286635004FB177 /* VTBaseModel.swift */; };
 		225F4E3D26286C7C004FB177 /* SwiftLibFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F4E3C26286C7C004FB177 /* SwiftLibFile.swift */; };
 		227DD49E2627DD9A006C8377 /* UIImage+SVGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 227DD49D2627DD9A006C8377 /* UIImage+SVGManager.m */; };
@@ -95,6 +110,21 @@
 		22142C822629317900C3499C /* MacroFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroFile.swift; sourceTree = "<group>"; };
 		22142C84262961F000C3499C /* ServiceInterviceFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInterviceFile.swift; sourceTree = "<group>"; };
 		22142C86262963CA00C3499C /* ServiceAddressFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAddressFile.swift; sourceTree = "<group>"; };
+		22192DEC262D8C8F0018E7B7 /* VTHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTHomePageViewController.swift; sourceTree = "<group>"; };
+		22192DEF262D8CB30018E7B7 /* VTZoneDynamicPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTZoneDynamicPageViewController.swift; sourceTree = "<group>"; };
+		22192DF2262D8CC20018E7B7 /* VTChatPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTChatPageViewController.swift; sourceTree = "<group>"; };
+		22192DF5262D8CD00018E7B7 /* VTMinePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMinePageViewController.swift; sourceTree = "<group>"; };
+		22192DF9262D8D160018E7B7 /* VTTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabbarViewController.swift; sourceTree = "<group>"; };
+		22192DFF262D92800018E7B7 /* SVGResBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVGResBundle.bundle; sourceTree = "<group>"; };
+		221D0A5C2632706C009F53DA /* VTBaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBaseNavViewController.swift; sourceTree = "<group>"; };
+		221D0BBF2632A8CF009F53DA /* ColorFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
+		221D0BC22632AEF4009F53DA /* BundlePathFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlePathFile.swift; sourceTree = "<group>"; };
+		221D0BE726351076009F53DA /* VTMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMainViewModel.swift; sourceTree = "<group>"; };
+		221D0BEA263514CE009F53DA /* UserDefaultsKeyFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeyFile.swift; sourceTree = "<group>"; };
+		221D0C0F263520C2009F53DA /* VTHudTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTHudTool.swift; sourceTree = "<group>"; };
+		221D0C3A2635221D009F53DA /* SwiftProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProgressHUD.swift; sourceTree = "<group>"; };
+		221D0C3E26354355009F53DA /* VTUserInfoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTUserInfoCache.swift; sourceTree = "<group>"; };
+		221D0C4126354A18009F53DA /* VTGlobalStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTGlobalStatusModel.swift; sourceTree = "<group>"; };
 		225F4E3A26286635004FB177 /* VTBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBaseModel.swift; sourceTree = "<group>"; };
 		225F4E3C26286C7C004FB177 /* SwiftLibFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibFile.swift; sourceTree = "<group>"; };
 		227DD49B2627DD9A006C8377 /* VoiceTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceTalk-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -157,6 +187,8 @@
 		22079C3C2623E9D50039C406 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				221D0A5B2632703D009F53DA /* BaseNav */,
+				22192DF8262D8CE60018E7B7 /* TabbarVC */,
 				227DD4A52627E76C006C8377 /* BaseModel */,
 				227DD4A12627E3CB006C8377 /* MainViewController */,
 				22079C3D2623E9DF0039C406 /* BaseViewController */,
@@ -193,6 +225,9 @@
 				22142C822629317900C3499C /* MacroFile.swift */,
 				22142C84262961F000C3499C /* ServiceInterviceFile.swift */,
 				22142C86262963CA00C3499C /* ServiceAddressFile.swift */,
+				221D0BBF2632A8CF009F53DA /* ColorFile.swift */,
+				221D0BC22632AEF4009F53DA /* BundlePathFile.swift */,
+				221D0BEA263514CE009F53DA /* UserDefaultsKeyFile.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -240,6 +275,118 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		22192DE4262D8BF90018E7B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				22192DE8262D8C260018E7B7 /* VC */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		22192DE5262D8C070018E7B7 /* ZoneDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				22192DE9262D8C400018E7B7 /* VC */,
+			);
+			path = ZoneDynamic;
+			sourceTree = "<group>";
+		};
+		22192DE6262D8C180018E7B7 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				22192DEA262D8C450018E7B7 /* VC */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		22192DE7262D8C1F0018E7B7 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				22192DEB262D8C4B0018E7B7 /* VC */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		22192DE8262D8C260018E7B7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				22192DEC262D8C8F0018E7B7 /* VTHomePageViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		22192DE9262D8C400018E7B7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				22192DEF262D8CB30018E7B7 /* VTZoneDynamicPageViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		22192DEA262D8C450018E7B7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				22192DF2262D8CC20018E7B7 /* VTChatPageViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		22192DEB262D8C4B0018E7B7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				22192DF5262D8CD00018E7B7 /* VTMinePageViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		22192DF8262D8CE60018E7B7 /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				22192DF9262D8D160018E7B7 /* VTTabbarViewController.swift */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		221D0A5B2632703D009F53DA /* BaseNav */ = {
+			isa = PBXGroup;
+			children = (
+				221D0A5C2632706C009F53DA /* VTBaseNavViewController.swift */,
+			);
+			path = BaseNav;
+			sourceTree = "<group>";
+		};
+		221D0BE626351054009F53DA /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				221D0BE726351076009F53DA /* VTMainViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		221D0C0E263520AD009F53DA /* Hud */ = {
+			isa = PBXGroup;
+			children = (
+				221D0C0F263520C2009F53DA /* VTHudTool.swift */,
+			);
+			path = Hud;
+			sourceTree = "<group>";
+		};
+		221D0C3926352201009F53DA /* SwiftProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				221D0C3A2635221D009F53DA /* SwiftProgressHUD.swift */,
+			);
+			path = SwiftProgressHUD;
+			sourceTree = "<group>";
+		};
+		221D0C3D2635433C009F53DA /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				221D0C3E26354355009F53DA /* VTUserInfoCache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		227DD493262723E1006C8377 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +402,7 @@
 			children = (
 				22079C302623E62A0039C406 /* Assets.xcassets */,
 				22142C7E26292F9A00C3499C /* GuideRes.xcassets */,
+				22192DFF262D92800018E7B7 /* SVGResBundle.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -271,6 +419,10 @@
 		227DD49626272472006C8377 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				22192DE7262D8C1F0018E7B7 /* Mine */,
+				22192DE6262D8C180018E7B7 /* Chat */,
+				22192DE5262D8C070018E7B7 /* ZoneDynamic */,
+				22192DE4262D8BF90018E7B7 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -285,6 +437,8 @@
 		227DD49826272484006C8377 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				221D0C3D2635433C009F53DA /* Cache */,
+				221D0C0E263520AD009F53DA /* Hud */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -292,6 +446,7 @@
 		227DD4992627248B006C8377 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				221D0C3926352201009F53DA /* SwiftProgressHUD */,
 				22142C43262876A700C3499C /* RazzleDazzle */,
 			);
 			path = Vender;
@@ -300,6 +455,7 @@
 		227DD4A12627E3CB006C8377 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				221D0BE626351054009F53DA /* VM */,
 				227DD4A22627E3DC006C8377 /* VC */,
 			);
 			path = MainViewController;
@@ -320,6 +476,7 @@
 				227DD4A62627E78B006C8377 /* VTBaseUserInfoModel.swift */,
 				225F4E3A26286635004FB177 /* VTBaseModel.swift */,
 				22142C802629306B00C3499C /* VTBaseViewModel.swift */,
+				221D0C4126354A18009F53DA /* VTGlobalStatusModel.swift */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -403,6 +560,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22142C61262876A700C3499C /* LICENSE in Resources */,
+				22192E00262D92800018E7B7 /* SVGResBundle.bundle in Resources */,
 				22079C342623E62A0039C406 /* LaunchScreen.storyboard in Resources */,
 				22142C7B262876A700C3499C /* README.md in Resources */,
 				22079C312623E62A0039C406 /* Assets.xcassets in Resources */,
@@ -462,15 +620,19 @@
 				22142C62262876A700C3499C /* PathPositionAnimation.swift in Sources */,
 				22142C66262876A700C3499C /* ConstraintConstantAnimation.swift in Sources */,
 				225F4E3B26286635004FB177 /* VTBaseModel.swift in Sources */,
+				221D0C10263520C2009F53DA /* VTHudTool.swift in Sources */,
 				22079C282623E6270039C406 /* AppDelegate.swift in Sources */,
 				22079C3F2623EA050039C406 /* VTBaseViewController.swift in Sources */,
 				22142C79262876A700C3499C /* ScaleAnimation.swift in Sources */,
 				22142C72262876A700C3499C /* AlphaAnimation.swift in Sources */,
 				22142C7D26292DE800C3499C /* AppGuideAnimationViewController.swift in Sources */,
 				22142C7A262876A700C3499C /* CornerRadiusAnimation.swift in Sources */,
+				221D0C3B2635221E009F53DA /* SwiftProgressHUD.swift in Sources */,
 				22142C6D262876A700C3499C /* UIView+Transform.swift in Sources */,
+				22192DED262D8C8F0018E7B7 /* VTHomePageViewController.swift in Sources */,
 				227DD49E2627DD9A006C8377 /* UIImage+SVGManager.m in Sources */,
 				22142C68262876A700C3499C /* BackgroundColorAnimation.swift in Sources */,
+				221D0A5D2632706C009F53DA /* VTBaseNavViewController.swift in Sources */,
 				22142C73262876A700C3499C /* Animatable.swift in Sources */,
 				22142C69262876A700C3499C /* ScrollViewPageConstraintAnimation.swift in Sources */,
 				22142C71262876A700C3499C /* LayerStrokeColorAnimation.swift in Sources */,
@@ -481,21 +643,31 @@
 				22142C87262963CA00C3499C /* ServiceAddressFile.swift in Sources */,
 				22142C64262876A700C3499C /* CubicBezier.swift in Sources */,
 				227DD4A42627E402006C8377 /* VTMainViewController.swift in Sources */,
+				22192DF3262D8CC20018E7B7 /* VTChatPageViewController.swift in Sources */,
 				22142C6A262876A700C3499C /* Animation.swift in Sources */,
 				22142C63262876A700C3499C /* EasingFunction.swift in Sources */,
+				221D0C3F26354355009F53DA /* VTUserInfoCache.swift in Sources */,
+				221D0BEB263514CE009F53DA /* UserDefaultsKeyFile.swift in Sources */,
 				22142C78262876A700C3499C /* Filmstrip.swift in Sources */,
 				22142C76262876A700C3499C /* LabelTextColorAnimation.swift in Sources */,
 				22142C6B262876A700C3499C /* LayerStrokeStartAnimation.swift in Sources */,
 				22142C6C262876A700C3499C /* LayerFillColorAnimation.swift in Sources */,
+				22192DFA262D8D160018E7B7 /* VTTabbarViewController.swift in Sources */,
 				22142C85262961F000C3499C /* ServiceInterviceFile.swift in Sources */,
 				22142C832629317900C3499C /* MacroFile.swift in Sources */,
+				22192DF0262D8CB30018E7B7 /* VTZoneDynamicPageViewController.swift in Sources */,
+				22192DF6262D8CD00018E7B7 /* VTMinePageViewController.swift in Sources */,
+				221D0C4226354A18009F53DA /* VTGlobalStatusModel.swift in Sources */,
 				22142C812629306B00C3499C /* VTBaseViewModel.swift in Sources */,
+				221D0BC02632A8CF009F53DA /* ColorFile.swift in Sources */,
 				22142C65262876A700C3499C /* RotationAnimation.swift in Sources */,
+				221D0BC32632AEF4009F53DA /* BundlePathFile.swift in Sources */,
 				22142C67262876A700C3499C /* AnimatedPagingScrollViewController.swift in Sources */,
 				227DD4A72627E78B006C8377 /* VTBaseUserInfoModel.swift in Sources */,
 				22142C6F262876A700C3499C /* LayerStrokeEndAnimation.swift in Sources */,
 				22142C77262876A700C3499C /* TranslationAnimation.swift in Sources */,
 				225F4E3D26286C7C004FB177 /* SwiftLibFile.swift in Sources */,
+				221D0BE826351076009F53DA /* VTMainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +811,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = VoiceTalk/SupportFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -666,7 +838,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = VoiceTalk/SupportFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

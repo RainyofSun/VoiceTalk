@@ -20,16 +20,22 @@ import UIKit
 class VTMainViewController: UIViewController {
     
     let reachability = try! Reachability();
-    
+    let mainVM = VTMainViewModel();
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // 开始网络监测
         openNetworkStatusObserver();
+        loadTabbarController();
         addUserGuideView();
         // Do any additional setup after loading the view.
     }
     
+    deinit {
+        printLog(String(format: "%@", self));
+        reachability.stopNotifier();
+    }
+ 
     // 开启网络监测
     private func openNetworkStatusObserver() {
         reachability.whenReachable = { reachability in
@@ -41,16 +47,31 @@ class VTMainViewController: UIViewController {
                 printLog("当前网络不可达");
             }
         }
+        try?reachability.startNotifier();
     }
     
     private func addUserGuideView() {
+        if !mainVM.showUserGuideView() {
+            printLog("不是新用户");
+            return;
+        }
         let guideVC = AppGuideAnimationViewController();
         self.view.addSubview(guideVC.view);
         self.addChild(guideVC);
         guideVC.switchVC = {
             guideVC.view.removeFromSuperview();
             guideVC.removeFromParent();
+            Defaults[\.isNewUser] = false;
         };
+    }
+    
+    private func loadTabbarController() {
+        let tabbar = VTTabbarViewController();
+        self.view.addSubview(tabbar.view);
+        self.addChild(tabbar);
+        tabbar.view.snp.makeConstraints { (make) in
+            make.left.bottom.right.top.equalToSuperview();
+        }
     }
 
     /*

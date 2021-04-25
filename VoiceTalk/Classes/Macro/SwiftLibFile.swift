@@ -12,3 +12,7 @@ import Foundation
  */
 @_exported import HandyJSON
 @_exported import Reachability
+@_exported import RAMAnimatedTabBarController
+@_exported import SnapKit
+@_exported import SwiftyUserDefaults
+

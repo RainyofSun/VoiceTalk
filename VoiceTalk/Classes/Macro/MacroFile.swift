@@ -40,11 +40,6 @@ let kTopBarSafeHeight = iphone_X ? 44.0 : 0;
 /*底部安全区域远离高度*/
 let kBottomBarSafeHeight = iphone_X ? 34.0 : 0;
 
-// 颜色
-func RGBCOLOR(r:CGFloat,_ g:CGFloat,_ b:CGFloat) -> UIColor {
-    return UIColor(red: (r)/255.0, green: (g)/255.0, blue: (b)/255.0, alpha: 1.0)
-}
-
 /**
   使用：printLog("hello world")   debug模式打印，release模式不打印
   使用：printLog("hello world", logError: true) release模式也可打印

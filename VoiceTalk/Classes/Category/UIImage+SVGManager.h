@@ -23,6 +23,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  show svg image
+ @param  filePath svg filePath
+ @return svg image
+ */
++ (UIImage *)svgImageWithContentFile:(NSString *)filePath;
+
+/**
+ show svg image
  
  @param name svg name
  @param size image size

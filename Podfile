@@ -55,7 +55,6 @@ def all_Pods
 #   pod 'FoldingCell', '~> 5.0.2'
 # Alert
     pod 'SCLAlertView'
-#    pod 'SwiftProgressHUD'
 # Button 有动画效果的button，适用于收藏、喜欢、点赞等
 #   pod 'DOFavoriteButton'
 #   pod 'hamburger-button'

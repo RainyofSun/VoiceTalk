@@ -17,6 +17,11 @@
     return svgImage.UIImage;
 }
 
++ (UIImage *)svgImageWithContentFile:(NSString *)filePath {
+    SVGKImage *svgImmage = [SVGKImage imageWithContentsOfFile:filePath];
+    return svgImmage.UIImage;
+}
+
 + (UIImage *)svgImageNamed:(NSString *)name size:(CGSize)size tintColor:(UIColor *)tintColor {
     SVGKImage *svgImage = [SVGKImage imageNamed:name];
     svgImage.size = size;
