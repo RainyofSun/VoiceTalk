@@ -23,7 +23,11 @@ class VTMainViewModel: VTBaseViewModel {
      * 判断登录是否过期
      */
     open func loginExpirOrNot(vc: UIViewController) {
-        
+        VTGlobalStatusModel.shared.userInfoModel = VTUserInfoCache.getCacheUserModel();
+        printLog("用户信息 %@",VTGlobalStatusModel.shared.userInfoModel);
+        if VTGlobalStatusModel.shared.userInfoModel != nil && VTGlobalStatusModel.shared.isLogin {
+            
+        }
     }
     
     /**

@@ -125,6 +125,7 @@
 		221D0C3A2635221D009F53DA /* SwiftProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftProgressHUD.swift; sourceTree = "<group>"; };
 		221D0C3E26354355009F53DA /* VTUserInfoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTUserInfoCache.swift; sourceTree = "<group>"; };
 		221D0C4126354A18009F53DA /* VTGlobalStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTGlobalStatusModel.swift; sourceTree = "<group>"; };
+		221D0C472637F7D9009F53DA /* VoiceTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceTalk.entitlements; sourceTree = "<group>"; };
 		225F4E3A26286635004FB177 /* VTBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBaseModel.swift; sourceTree = "<group>"; };
 		225F4E3C26286C7C004FB177 /* SwiftLibFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibFile.swift; sourceTree = "<group>"; };
 		227DD49B2627DD9A006C8377 /* VoiceTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceTalk-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 		22079C262623E6270039C406 /* VoiceTalk */ = {
 			isa = PBXGroup;
 			children = (
+				221D0C472637F7D9009F53DA /* VoiceTalk.entitlements */,
 				227DD494262723ED006C8377 /* Resource */,
 				227DD493262723E1006C8377 /* SupportFiles */,
 				22079C402623EA130039C406 /* Classes */,
@@ -805,6 +807,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoiceTalk/VoiceTalk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GJXZ73B365;
@@ -832,6 +835,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VoiceTalk/VoiceTalk.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GJXZ73B365;

@@ -17,6 +17,7 @@ class VTBaseUserInfoModel: VTBaseModel,NSCoding {
     var accountNo : String?
     var token : String?
     var rcToken : String?
+    var loginTime : String?
     
     var userStories : String?
     var country : String?
@@ -37,6 +38,7 @@ class VTBaseUserInfoModel: VTBaseModel,NSCoding {
         aCoder.encode(userStories,forKey: "userStories");
         aCoder.encode(country,forKey: "country");
         aCoder.encode(birthday, forKey: "birthday");
+        aCoder.encode(loginTime,forKey: "loginTime");
      }
     
      // 解析NIB/XIB的时候会调用
@@ -50,6 +52,7 @@ class VTBaseUserInfoModel: VTBaseModel,NSCoding {
         userStories = aDecoder.decodeObject(forKey: "userStories") as? String
         birthday = aDecoder.decodeObject(forKey: "birthday") as? String
         country = aDecoder.decodeObject(forKey: "country") as? String
+        loginTime = aDecoder.decodeObject(forKey: "loginTime") as? String
      }
     
     required init() {

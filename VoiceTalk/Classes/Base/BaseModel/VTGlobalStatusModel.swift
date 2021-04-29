@@ -14,6 +14,12 @@ class VTGlobalStatusModel: NSObject {
     
     /** 全局用户信息 */
     var userInfoModel: VTBaseUserInfoModel!;
+    /** 用户是否登陆 */
+    var isLogin :Bool {
+        get {
+            return self.userInfoModel.token != nil && self.userInfoModel.token?.count != 0
+        }
+    }
     
     static let shared = VTGlobalStatusModel();
     
