@@ -9,7 +9,7 @@
 import UIKit
 
 // token过期时间
-let toeknExpireTime: NSInteger = 5400000;
+let tokenExpireTime: NSInteger = 5400000;
 
 class VTMainViewModel: VTBaseViewModel {
     /**
@@ -24,9 +24,15 @@ class VTMainViewModel: VTBaseViewModel {
      */
     open func loginExpirOrNot(vc: UIViewController) {
         VTGlobalStatusModel.shared.userInfoModel = VTUserInfoCache.getCacheUserModel();
-        printLog("用户信息 %@",VTGlobalStatusModel.shared.userInfoModel);
+        printLog("用户信息 %@",VTGlobalStatusModel.shared.userInfoModel!);
         if VTGlobalStatusModel.shared.userInfoModel != nil && VTGlobalStatusModel.shared.isLogin {
-            
+            let time = self.getNowTimeStamp();
+            let serviceTime = Int(VTGlobalStatusModel.shared.userInfoModel.loginTime!);
+            if (serviceTime! - time) > tokenExpireTime {
+                VTGlobalStatusModel.shared.rersetData();
+                VTUserInfoCache.deleteCacheUserModel();
+                
+            }
         }
     }
     
