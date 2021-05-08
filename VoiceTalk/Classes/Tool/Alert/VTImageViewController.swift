@@ -46,7 +46,7 @@ class VTImageViewController: VTBaseAlertViewController {
         self.contentLab.textColor = appSubTextColor;
         self.contentLab.font = appFont(fontSize: 15);
         
-//        self.sureBtn.setTitle('', for: <#T##UIControl.State#>)
+        self.sureBtn.setTitle(LanguageTool.language(key: "我知道了"), for: UIControl.State.normal);
         
         self.view.addSubview(self.maskView);
         self.maskView.addSubview(self.bgView);

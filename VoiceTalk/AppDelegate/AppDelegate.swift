@@ -20,10 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func initRootVC() {
+        // 设置语言
+        LanguageTool.resetLanguage(languageName: LanguageTool.CHINESE);
         self.window = UIWindow.init(frame: UIScreen.main.bounds);
         self.window?.backgroundColor = UIColor.white;
-        self.window?.makeKeyAndVisible();
         self.window?.rootViewController = VTMainViewController();
+        self.window?.makeKeyAndVisible();
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.default;
     }
 

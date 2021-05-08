@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  VoiceTalk
+
+  Created by macos on 2021/5/8.
+  Copyright © 2021 macos. All rights reserved.
+*/
+
+// 弹窗提示语
+"我知道了" = "I Know";
