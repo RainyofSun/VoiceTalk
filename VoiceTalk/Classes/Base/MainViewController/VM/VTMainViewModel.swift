@@ -58,6 +58,8 @@ class VTMainViewModel: VTBaseViewModel {
                 let versionModel: VTVersionModel = VTVersionModel.dictionaryToModel(jsonDic["data"] as! [String : Any],VTVersionModel.self) as! VTVersionModel;
                 if versionModel.state == 0 {
                     // 软更新
+                    
+                    
                 } else if versionModel.state == 1 {
                     // 强制更新
                 } else if versionModel.state == 2 {
