@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="20px" viewBox="0 0 19 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>common/icon/check</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.750238328">
+        <g id="I-02-七日签到" transform="translate(-56.000000, -262.000000)">
+            <g id="hi/message/recharge/recharge-item备份-5" transform="translate(18.000000, 180.000000)">
+                <g id="check-in-award-item" transform="translate(12.000000, 50.000000)">
+                    <g id="common/icon/edit" transform="translate(19.000000, 25.710526)" filter="url(#filter-1)">
+                        <g transform="translate(7.000000, 6.907895)" id="check" fill="#000000" fill-rule="nonzero">
+                            <rect id="矩形" opacity="0" x="0" y="0" width="19" height="18.75"></rect>
+                            <path d="M17.7175,5.92232142 C17.7175,6.20089285 17.6184286,6.43794642 17.4202857,6.63348214 L8.30164285,15.6321428 C8.10349999,15.8276786 7.86328571,15.9254464 7.581,15.9254464 C7.29871429,15.9254464 7.05850001,15.8276786 6.86035715,15.6321428 L1.57971429,10.4209821 C1.38157143,10.2254464 1.2825,9.98839285 1.2825,9.70982142 C1.2825,9.43125 1.38157143,9.19419643 1.57971429,8.99866071 L3.021,7.57633929 C3.21914286,7.38080357 3.45935715,7.28303571 3.74164285,7.28303571 C4.02392856,7.28303571 4.26414285,7.38080357 4.46228571,7.57633929 L7.57964285,10.6633929 L14.535,3.78883929 C14.7331429,3.59330357 14.9733571,3.49553571 15.2556429,3.49553571 C15.5379286,3.49553571 15.7781428,3.59330357 15.9762857,3.78883929 L17.4175714,5.21116071 C17.6157143,5.40669643 17.7147857,5.64375 17.7147857,5.92232142 L17.7175,5.92232142 Z" id="路径"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

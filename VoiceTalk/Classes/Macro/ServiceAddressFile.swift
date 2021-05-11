@@ -13,3 +13,8 @@ let DebugServiceAddress = "http://10.0.8.21:8083/v3";
 /// 正式环境地址
 let ReleaseServiceAddress = "http://120.133.27.180:8083/v1";
 
+#if DEBUG
+let ServiceAddress = DebugServiceAddress;
+#else
+let ServiceAddress = ReleaseServiceAddress;
+#endif

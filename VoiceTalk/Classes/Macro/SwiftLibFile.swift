@@ -15,4 +15,4 @@ import Foundation
 @_exported import RAMAnimatedTabBarController
 @_exported import SnapKit
 @_exported import SwiftyUserDefaults
-
+@_exported import Moya

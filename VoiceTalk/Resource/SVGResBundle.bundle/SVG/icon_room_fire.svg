@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>common/icon/fire_red</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 0.438722 0 0 0 0 0.438722 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="HiDPI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Room-black-base" transform="translate(-16.000000, -114.000000)">
+            <g id="hi/message/room/room-base-W" transform="translate(0.000000, 48.000000)">
+                <g id="room-hot-value" transform="translate(12.000000, 64.000000)">
+                    <g id="Fire" transform="translate(4.000000, 2.500000)" filter="url(#filter-1)">
+                        <g>
+                            <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="15" height="15"></rect>
+                            <path d="M10.6248636,5.19886364 C9.52713636,4.1401875 8.97795455,2.75183523 8.97795455,1.36363636 C7.61067926,3.33291669 6.74351219,5.58498795 6.44665909,7.93752273 C5.52806818,7.09453977 4.85781818,5.98477841 4.59165909,4.69552841 C3.43984091,5.80605682 2.72727273,7.34014773 2.72727273,9.03409091 C2.72727273,11.5757727 4.86402273,13.6363636 7.5,13.6363636 C10.1359773,13.6363636 12.2727273,11.5757727 12.2727273,9.03409091 C12.2727273,7.53681818 11.6430455,6.18052841 10.6248636,5.19886364 Z" id="路径" fill="#000000" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

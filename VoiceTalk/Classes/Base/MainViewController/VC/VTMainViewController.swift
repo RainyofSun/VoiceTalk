@@ -27,8 +27,20 @@ class VTMainViewController: UIViewController {
         // 开始网络监测
         openNetworkStatusObserver();
         loadTabbarController();
+        self.mainVM.loginExpirOrNot();
         addUserGuideView();
         // Do any additional setup after loading the view.
+        let lab = UILabel.init();
+        lab.text = LanguageTool.language(key: "我知道了");
+        lab.textColor = mainColor;
+        self.view.addSubview(lab);
+        lab.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view);
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.mainVM.checkAppVersion();
     }
     
     deinit {

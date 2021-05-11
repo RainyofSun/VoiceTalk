@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>common-icon-copy-复制</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.825206 0 0 0 0 0.841794 0 0 0 0 0.826700 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A-07-首页-我的-我的房间" transform="translate(-73.000000, -544.000000)">
+            <g id="room-mine-big" transform="translate(16.000000, 233.000000)">
+                <g id="common/icon/copy-复制" transform="translate(24.000000, 309.000000)" filter="url(#filter-1)">
+                    <g transform="translate(33.000000, 2.000000)" id="复制" fill="#000000" fill-rule="nonzero">
+                        <rect id="矩形" opacity="0" x="0" y="0" width="12" height="12"></rect>
+                        <path d="M9,3 C9.55228475,3 10,3.44771525 10,4 L10,10 C10,10.2652165 9.89464316,10.5195704 9.70710678,10.7071068 C9.5195704,10.8946432 9.26521649,11 9,11 L5,11 C4.73478351,11 4.48042959,10.8946432 4.29289321,10.7071068 C4.10535683,10.5195704 4,10.2652165 4,10 L4,4 C4,3.73478351 4.10535684,3.48042959 4.29289322,3.29289321 C4.4804296,3.10535684 4.73478351,3 5,3 L9,3 L9,3 Z M9,4 L5,4 L5,10 L9,10 L9,4 Z M7.5,0.999999996 C7.77614238,0.999999996 8,1.22385762 8,1.5 L7.9995,2 L3,2 L2.9995,9 L2.5,9 C2.22385762,9 2,8.77614237 2,8.5 L2,2 C2,1.73478351 2.10535684,1.4804296 2.29289322,1.29289322 C2.4804296,1.10535684 2.73478351,0.999999996 3,0.999999996 L7.5,0.999999996 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -62,8 +62,6 @@
 		221CF1CA26462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1C626462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf */; };
 		221CF1CB26462CDD00593DF4 /* Futura-Medium-6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1C726462CDD00593DF4 /* Futura-Medium-6.ttf */; };
 		221CF1CE26462D9700593DF4 /* ImageRes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1CD26462D9700593DF4 /* ImageRes.xcassets */; };
-		221CF1D72646301B00593DF4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1D92646301B00593DF4 /* Localizable.strings */; };
-		221CF1DD2646308700593DF4 /* LanguageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221CF1DC2646308700593DF4 /* LanguageTool.swift */; };
 		221D0A5D2632706C009F53DA /* VTBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0A5C2632706C009F53DA /* VTBaseNavViewController.swift */; };
 		221D0BC02632A8CF009F53DA /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0BBF2632A8CF009F53DA /* ColorFile.swift */; };
 		221D0BC32632AEF4009F53DA /* BundlePathFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0BC22632AEF4009F53DA /* BundlePathFile.swift */; };
@@ -73,6 +71,13 @@
 		221D0C3B2635221E009F53DA /* SwiftProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0C3A2635221D009F53DA /* SwiftProgressHUD.swift */; };
 		221D0C3F26354355009F53DA /* VTUserInfoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0C3E26354355009F53DA /* VTUserInfoCache.swift */; };
 		221D0C4226354A18009F53DA /* VTGlobalStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0C4126354A18009F53DA /* VTGlobalStatusModel.swift */; };
+		222F7A0726491061004FB29A /* LanguageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F7A0626491061004FB29A /* LanguageTool.swift */; };
+		222F7A1526491111004FB29A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 222F7A1326491111004FB29A /* Localizable.strings */; };
+		222F7A2C26493924004FB29A /* VersionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F7A2B26493924004FB29A /* VersionAPI.swift */; };
+		222F7A31264940D3004FB29A /* DeviceInfoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F7A30264940D3004FB29A /* DeviceInfoFile.swift */; };
+		222F7A34264A1EA8004FB29A /* MapExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F7A33264A1EA8004FB29A /* MapExtension.swift */; };
+		222F7A3E264A3793004FB29A /* VTVersionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F7A3D264A3793004FB29A /* VTVersionModel.swift */; };
+		222F7A47264A66E5004FB29A /* VTVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F7A46264A66E5004FB29A /* VTVersionViewController.swift */; };
 		225F4E3B26286635004FB177 /* VTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F4E3A26286635004FB177 /* VTBaseModel.swift */; };
 		225F4E3D26286C7C004FB177 /* SwiftLibFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F4E3C26286C7C004FB177 /* SwiftLibFile.swift */; };
 		227DD4A42627E402006C8377 /* VTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227DD4A32627E402006C8377 /* VTMainViewController.swift */; };
@@ -143,9 +148,6 @@
 		221CF1C726462CDD00593DF4 /* Futura-Medium-6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Medium-6.ttf"; sourceTree = "<group>"; };
 		221CF1CD26462D9700593DF4 /* ImageRes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageRes.xcassets; sourceTree = "<group>"; };
 		221CF1D026462FA900593DF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		221CF1D82646301B00593DF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		221CF1DB2646301F00593DF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		221CF1DC2646308700593DF4 /* LanguageTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTool.swift; sourceTree = "<group>"; };
 		221D0A5C2632706C009F53DA /* VTBaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBaseNavViewController.swift; sourceTree = "<group>"; };
 		221D0BBF2632A8CF009F53DA /* ColorFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFile.swift; sourceTree = "<group>"; };
 		221D0BC22632AEF4009F53DA /* BundlePathFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundlePathFile.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 		221D0C3E26354355009F53DA /* VTUserInfoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTUserInfoCache.swift; sourceTree = "<group>"; };
 		221D0C4126354A18009F53DA /* VTGlobalStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTGlobalStatusModel.swift; sourceTree = "<group>"; };
 		221D0C472637F7D9009F53DA /* VoiceTalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VoiceTalk.entitlements; sourceTree = "<group>"; };
+		222F7A0626491061004FB29A /* LanguageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageTool.swift; sourceTree = "<group>"; };
+		222F7A1426491111004FB29A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		222F7A172649111A004FB29A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		222F7A2B26493924004FB29A /* VersionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionAPI.swift; sourceTree = "<group>"; };
+		222F7A30264940D3004FB29A /* DeviceInfoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoFile.swift; sourceTree = "<group>"; };
+		222F7A33264A1EA8004FB29A /* MapExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExtension.swift; sourceTree = "<group>"; };
+		222F7A3D264A3793004FB29A /* VTVersionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTVersionModel.swift; sourceTree = "<group>"; };
+		222F7A46264A66E5004FB29A /* VTVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTVersionViewController.swift; sourceTree = "<group>"; };
 		225F4E3A26286635004FB177 /* VTBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBaseModel.swift; sourceTree = "<group>"; };
 		225F4E3C26286C7C004FB177 /* SwiftLibFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLibFile.swift; sourceTree = "<group>"; };
 		227DD49B2627DD9A006C8377 /* VoiceTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceTalk-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -261,6 +271,7 @@
 				221D0BBF2632A8CF009F53DA /* ColorFile.swift */,
 				221D0BC22632AEF4009F53DA /* BundlePathFile.swift */,
 				221D0BEA263514CE009F53DA /* UserDefaultsKeyFile.swift */,
+				222F7A30264940D3004FB29A /* DeviceInfoFile.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -394,6 +405,7 @@
 			children = (
 				221CF1B126462B7200593DF4 /* Date.swift */,
 				221CF1B226462B7200593DF4 /* TopController.swift */,
+				222F7A33264A1EA8004FB29A /* MapExtension.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -402,6 +414,7 @@
 			isa = PBXGroup;
 			children = (
 				221CF1C026462C7300593DF4 /* VTImageViewController.swift */,
+				222F7A46264A66E5004FB29A /* VTVersionViewController.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -415,15 +428,6 @@
 				221CF1C726462CDD00593DF4 /* Futura-Medium-6.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		221CF1D226462FE600593DF4 /* Language */ = {
-			isa = PBXGroup;
-			children = (
-				221CF1D92646301B00593DF4 /* Localizable.strings */,
-				221CF1DC2646308700593DF4 /* LanguageTool.swift */,
-			);
-			path = Language;
 			sourceTree = "<group>";
 		};
 		221D0A5B2632703D009F53DA /* BaseNav */ = {
@@ -466,6 +470,158 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		222F79F026490E1F004FB29A /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				222F7A1326491111004FB29A /* Localizable.strings */,
+				222F7A0626491061004FB29A /* LanguageTool.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		222F7A1926493375004FB29A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				222F7A1C26493395004FB29A /* ThirdLogin */,
+				222F7A1B26493389004FB29A /* PwdLogin */,
+				222F7A1A26493380004FB29A /* PhoneLogin */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		222F7A1A26493380004FB29A /* PhoneLogin */ = {
+			isa = PBXGroup;
+			children = (
+				222F7A1F264933D7004FB29A /* Model */,
+				222F7A20264933D7004FB29A /* VC */,
+				222F7A1E264933D7004FB29A /* View */,
+				222F7A1D264933D7004FB29A /* VM */,
+			);
+			path = PhoneLogin;
+			sourceTree = "<group>";
+		};
+		222F7A1B26493389004FB29A /* PwdLogin */ = {
+			isa = PBXGroup;
+			children = (
+				222F7A24264933DE004FB29A /* Model */,
+				222F7A23264933DE004FB29A /* VC */,
+				222F7A21264933DE004FB29A /* View */,
+				222F7A22264933DE004FB29A /* VM */,
+			);
+			path = PwdLogin;
+			sourceTree = "<group>";
+		};
+		222F7A1C26493395004FB29A /* ThirdLogin */ = {
+			isa = PBXGroup;
+			children = (
+				222F7A27264933E5004FB29A /* Model */,
+				222F7A28264933E5004FB29A /* VC */,
+				222F7A26264933E5004FB29A /* View */,
+				222F7A25264933E5004FB29A /* VM */,
+			);
+			path = ThirdLogin;
+			sourceTree = "<group>";
+		};
+		222F7A1D264933D7004FB29A /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		222F7A1E264933D7004FB29A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		222F7A1F264933D7004FB29A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		222F7A20264933D7004FB29A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		222F7A21264933DE004FB29A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		222F7A22264933DE004FB29A /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		222F7A23264933DE004FB29A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		222F7A24264933DE004FB29A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		222F7A25264933E5004FB29A /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		222F7A26264933E5004FB29A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		222F7A27264933E5004FB29A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		222F7A28264933E5004FB29A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		222F7A2A264938F3004FB29A /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				222F7A2B26493924004FB29A /* VersionAPI.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		222F7A3C264A3749004FB29A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				222F7A3D264A3793004FB29A /* VTVersionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		227DD493262723E1006C8377 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +656,7 @@
 		227DD49626272472006C8377 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				222F7A1926493375004FB29A /* Login */,
 				22192DE7262D8C1F0018E7B7 /* Mine */,
 				22192DE6262D8C180018E7B7 /* Chat */,
 				22192DE5262D8C070018E7B7 /* ZoneDynamic */,
@@ -511,7 +668,7 @@
 		227DD4972627247E006C8377 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				221CF1D226462FE600593DF4 /* Language */,
+				222F79F026490E1F004FB29A /* Language */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -538,6 +695,8 @@
 		227DD4A12627E3CB006C8377 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				222F7A3C264A3749004FB29A /* Model */,
+				222F7A2A264938F3004FB29A /* Net */,
 				221D0BE626351054009F53DA /* VM */,
 				227DD4A22627E3DC006C8377 /* VC */,
 			);
@@ -644,7 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22142C61262876A700C3499C /* LICENSE in Resources */,
-				221CF1D72646301B00593DF4 /* Localizable.strings in Resources */,
+				222F7A1526491111004FB29A /* Localizable.strings in Resources */,
 				22192E00262D92800018E7B7 /* SVGResBundle.bundle in Resources */,
 				22079C342623E62A0039C406 /* LaunchScreen.storyboard in Resources */,
 				221CF1C926462CDD00593DF4 /* YSHaoShenTi-2.ttf in Resources */,
@@ -721,6 +880,8 @@
 				22142C7D26292DE800C3499C /* AppGuideAnimationViewController.swift in Sources */,
 				22142C7A262876A700C3499C /* CornerRadiusAnimation.swift in Sources */,
 				221CF1B426462B7300593DF4 /* Date.swift in Sources */,
+				222F7A2C26493924004FB29A /* VersionAPI.swift in Sources */,
+				222F7A31264940D3004FB29A /* DeviceInfoFile.swift in Sources */,
 				221D0C3B2635221E009F53DA /* SwiftProgressHUD.swift in Sources */,
 				22142C6D262876A700C3499C /* UIView+Transform.swift in Sources */,
 				22192DED262D8C8F0018E7B7 /* VTHomePageViewController.swift in Sources */,
@@ -731,12 +892,15 @@
 				22142C69262876A700C3499C /* ScrollViewPageConstraintAnimation.swift in Sources */,
 				221CF1BD26462C4C00593DF4 /* MinSpaceFile.swift in Sources */,
 				22142C71262876A700C3499C /* LayerStrokeColorAnimation.swift in Sources */,
+				222F7A3E264A3793004FB29A /* VTVersionModel.swift in Sources */,
 				22142C6E262876A700C3499C /* Interpolatable.swift in Sources */,
 				22142C70262876A700C3499C /* ConstraintMultiplierAnimation.swift in Sources */,
 				22142C74262876A700C3499C /* HideAnimation.swift in Sources */,
 				22142C75262876A700C3499C /* Animator.swift in Sources */,
 				22142C87262963CA00C3499C /* ServiceAddressFile.swift in Sources */,
+				222F7A47264A66E5004FB29A /* VTVersionViewController.swift in Sources */,
 				22142C64262876A700C3499C /* CubicBezier.swift in Sources */,
+				222F7A34264A1EA8004FB29A /* MapExtension.swift in Sources */,
 				227DD4A42627E402006C8377 /* VTMainViewController.swift in Sources */,
 				22192DF3262D8CC20018E7B7 /* VTChatPageViewController.swift in Sources */,
 				22142C6A262876A700C3499C /* Animation.swift in Sources */,
@@ -764,7 +928,7 @@
 				22142C77262876A700C3499C /* TranslationAnimation.swift in Sources */,
 				225F4E3D26286C7C004FB177 /* SwiftLibFile.swift in Sources */,
 				221D0BE826351076009F53DA /* VTMainViewModel.swift in Sources */,
-				221CF1DD2646308700593DF4 /* LanguageTool.swift in Sources */,
+				222F7A0726491061004FB29A /* LanguageTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,11 +944,11 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		221CF1D92646301B00593DF4 /* Localizable.strings */ = {
+		222F7A1326491111004FB29A /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				221CF1D82646301B00593DF4 /* zh-Hans */,
-				221CF1DB2646301F00593DF4 /* en */,
+				222F7A1426491111004FB29A /* en */,
+				222F7A172649111A004FB29A /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

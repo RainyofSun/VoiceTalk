@@ -8,3 +8,4 @@
 
 // 弹窗提示语
 "我知道了" = "I Know";
+"token已过期,请重新登录" = "Token has expired. Please log in again";

@@ -10,6 +10,9 @@ import Foundation
 
 // 接口
 
+/// 版本检测
+let CheckVersion            = "/version/selectVersionCount";
+
 /// - 登陆
 // 检测用户是否已注册
 let check_tel_exist         = "/appUser/checkTelExist/";

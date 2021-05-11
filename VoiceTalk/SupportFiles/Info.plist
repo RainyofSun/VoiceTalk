@@ -20,12 +20,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
-        <string>Futura-Medium-6.ttf</string>
-        <string>HS Alhandsi W23 Regular.ttf</string>
-        <string>ResourceHanRoundedCN-Medium.ttf</string>
-        <string>YSHaoShenTi-2.ttf</string>
+		<string>Futura-Medium-6.ttf</string>
+		<string>HS Alhandsi W23 Regular.ttf</string>
+		<string>ResourceHanRoundedCN-Medium.ttf</string>
+		<string>YSHaoShenTi-2.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

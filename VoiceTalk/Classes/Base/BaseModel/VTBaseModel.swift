@@ -16,7 +16,7 @@ class VTBaseModel: HandyJSON {
     /**
      *  Json转对象
      */
-    open func jsonToModel(_ jsonStr:String,_ modelType:HandyJSON.Type) ->VTBaseModel {
+    open class func jsonToModel(_ jsonStr:String,_ modelType:HandyJSON.Type) ->VTBaseModel {
         if jsonStr == "" || jsonStr.count == 0 {
             #if DEBUG
             print("jsonoModel:字符串为空")
@@ -30,7 +30,7 @@ class VTBaseModel: HandyJSON {
     /**
      *  Json转数组对象
      */
-    open func jsonArrayToModel(_ jsonArrayStr:String, _ modelType:HandyJSON.Type) ->[VTBaseModel] {
+    open class func jsonArrayToModel(_ jsonArrayStr:String, _ modelType:HandyJSON.Type) ->[VTBaseModel] {
         if jsonArrayStr == "" || jsonArrayStr.count == 0 {
             #if DEBUG
             print("jsonToModelArray:字符串为空")
@@ -50,7 +50,7 @@ class VTBaseModel: HandyJSON {
     /**
      *  字典转对象
      */
-    open func dictionaryToModel(_ dictionStr:[String:Any],_ modelType:HandyJSON.Type) -> VTBaseModel {
+    open class func dictionaryToModel(_ dictionStr:[String:Any],_ modelType:HandyJSON.Type) -> VTBaseModel {
         if dictionStr.count == 0 {
             #if DEBUG
             print("dictionaryToModel:字符串为空")
@@ -63,7 +63,7 @@ class VTBaseModel: HandyJSON {
     /**
      *  对象转JSON
      */
-    open func modelToJson(_ model:VTBaseModel?) -> String {
+    open class func modelToJson(_ model:VTBaseModel?) -> String {
         if model == nil {
             #if DEBUG
             print("modelToJson:model为空")
@@ -76,7 +76,7 @@ class VTBaseModel: HandyJSON {
     /**
      *  对象转字典
      */
-    open func modelToDictionary(_ model:VTBaseModel?) -> [String:Any] {
+    open class func modelToDictionary(_ model:VTBaseModel?) -> [String:Any] {
         if model == nil {
             #if DEBUG
             print("modelToJson:model为空")
@@ -88,7 +88,7 @@ class VTBaseModel: HandyJSON {
     
     
     //数组转json
-    open func arrayToJson(_ array:NSArray) -> String {
+    open class func arrayToJson(_ array:NSArray) -> String {
         if (!JSONSerialization.isValidJSONObject(array)) {
             print("无法解析出JSONString")
             return ""
@@ -103,7 +103,7 @@ class VTBaseModel: HandyJSON {
     /**
      * 字典转JSON
      */
-    open func dictionaryToJson(_ dictionary:NSDictionary) -> String {
+    open class func dictionaryToJson(_ dictionary:NSDictionary) -> String {
         if (!JSONSerialization.isValidJSONObject(dictionary)) {
             print("无法解析出JSONString")
             return ""

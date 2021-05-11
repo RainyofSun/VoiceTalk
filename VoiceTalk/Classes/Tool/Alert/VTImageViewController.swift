@@ -18,17 +18,8 @@ class VTImageViewController: VTBaseAlertViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setupUI();
         // Do any additional setup after loading the view.
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        weak var weakSelf = self;
-        self.dismissViewController {
-            if weakSelf?.completeBlock != nil {
-                weakSelf?.completeBlock!(1);
-            }
-        };
     }
     
     private func setupUI() {
@@ -47,29 +38,47 @@ class VTImageViewController: VTBaseAlertViewController {
         self.contentLab.font = appFont(fontSize: 15);
         
         self.sureBtn.setTitle(LanguageTool.language(key: "我知道了"), for: UIControl.State.normal);
-        
+        self.sureBtn.setTitleColor(mainColor, for: UIControl.State.normal);
+        self.sureBtn.layer.cornerRadius = 8;
+        self.sureBtn.clipsToBounds = true;
+        self.sureBtn.addTarget(self, action: #selector(disDialog(_ :)), for: UIControl.Event.touchUpInside);
+
         self.view.addSubview(self.maskView);
         self.maskView.addSubview(self.bgView);
         self.bgView.addSubview(self.alertImgView);
         self.bgView.addSubview(self.contentLab);
+        self.bgView.addSubview(self.sureBtn);
         
         self.maskView.snp.makeConstraints { (make) in
             make.left.right.bottom.top.equalToSuperview();
         };
-        self.maskView.snp.makeConstraints { (make) in
+        self.bgView.snp.makeConstraints { (make) in
             make.center.equalToSuperview();
             make.width.equalTo(screen_width * 0.64);
-            make.height.equalTo(screen_height * 0.4);
         }
         self.alertImgView.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview();
             make.top.equalTo(space(times: 2));
         }
+        self.sureBtn.snp.makeConstraints { (make) in
+            make.centerX.equalTo(self.view);
+            make.bottom.equalTo(self.bgView.snp.bottom).offset(space(times: -2));
+        }
+        
         self.contentLab.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview();
             make.top.equalTo(self.alertImgView.snp.bottom).offset(space(times: 2));
-            
+            make.bottom.equalTo(self.sureBtn.snp.top).offset(space(times: -2));
         }
+    }
+    
+    @objc func disDialog(_ sender:UIButton) {
+        weak var weakSelf = self;
+        self.dismissViewController {
+            if weakSelf?.completeBlock != nil {
+                weakSelf?.completeBlock!(sender.tag);
+            }
+        };
     }
 
     /*

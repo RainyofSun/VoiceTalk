@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>踢出</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 0.534042 0 0 0 0 0.523149 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="F-05-Room-用户操作" transform="translate(-120.000000, -373.000000)">
+            <g id="编组-2" transform="translate(32.000000, 201.000000)">
+                <g id="hi/message/room/user/kick-out备份" transform="translate(72.000000, 164.000000)" filter="url(#filter-1)">
+                    <g transform="translate(11.000000, 8.000000)">
+                        <g id="common/icon/voice-off" transform="translate(5.000000, 0.000000)" fill="#000000" fill-rule="nonzero">
+                            <g id="踢出">
+                                <rect id="矩形" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                                <path d="M8.4,0 C4.24,0 0.8,3.44 0.8,7.6 C0.8,11.76 4.24,15.2 8.4,15.2 C12.56,15.2 16,11.76 16,7.6 C16,3.44 12.56,0 8.4,0 Z M8.4,1.6 C11.36,1.6 13.92,3.84 14.32,6.72 L2.48,6.72 C2.88,3.84 5.36,1.6 8.4,1.6 Z M8.4,13.6 C5.36,13.6 2.88,11.36 2.48,8.48 L14.32,8.48 C13.92,11.44 11.36,13.6 8.4,13.6 L8.4,13.6 Z" id="形状"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

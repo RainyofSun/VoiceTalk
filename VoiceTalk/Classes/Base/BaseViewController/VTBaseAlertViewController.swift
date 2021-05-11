@@ -40,12 +40,16 @@ class VTBaseAlertViewController: UIViewController {
         return alertViewController;
     }
     
-    class func initWithMessage(message:String,cancelButtonTitle:String,otherButtonTitle:String) -> VTBaseAlertViewController {
-        let alertController = VTBaseAlertViewController.init();
+    class func initWithMessage(message:String,cancelButtonTitle:String?,otherButtonTitle:String?,completeBlock:@escaping ((_ buttonIndex:Int)->Void)) {
+        let alertController = self.init();
         alertController.message = message;
-        alertController.cancelButtonTitle = cancelButtonTitle;
-        alertController.otherButtonTitle = otherButtonTitle;
-        return alertController;
+        if otherButtonTitle != nil {
+            alertController.otherButtonTitle = otherButtonTitle;
+        }
+        if cancelButtonTitle != nil {
+            alertController.cancelButtonTitle = cancelButtonTitle;
+        }
+        alertController.showWithPresentVC(presentVC: VTBaseAlertViewController.topViewController()!, completeBlock: completeBlock);
     }
     
     func dismissViewController(complete : (() -> Void)? = nil) {

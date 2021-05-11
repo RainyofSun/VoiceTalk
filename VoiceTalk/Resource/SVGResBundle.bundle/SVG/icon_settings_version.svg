@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>versions</title>
+    <g id="HiDPI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="H-03-setting-设定" transform="translate(-24.000000, -247.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="编组-2" transform="translate(24.000000, 197.000000)">
+                <g id="版本-version" transform="translate(0.000000, 49.000000)">
+                    <g id="versions" transform="translate(0.000000, 1.000000)">
+                        <rect id="矩形" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M21,4.5 L12,4.5 C11.175,4.5 10.5,5.175 10.5,6 L10.5,18 C10.5,18.825 11.175,19.5 12,19.5 L21,19.5 C21.825,19.5 22.5,18.825 22.5,18 L22.5,6 C22.5,5.175 21.825,4.5 21,4.5 Z M19.5,16.5 L13.5,16.5 L13.5,7.5 L19.5,7.5 L19.5,16.5 Z M7.5,6 L9,6 L9,7.5 L7.5,7.5 L7.5,16.5 L9,16.5 L9,18 L7.5,18 C6.675,18 6,17.325 6,16.5 L6,7.5 C6,6.675 6.675,6 7.5,6 Z M3,7.5 L4.5,7.5 L4.5,9 L3,9 L3,15 L4.5,15 L4.5,16.5 L3,16.5 C2.175,16.5 1.5,15.825 1.5,15 L1.5,9 C1.5,8.175 2.175,7.5 3,7.5 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -22,7 +22,7 @@ class VTUserInfoCache: NSObject {
     /**
      * 获取用户信息
      */
-    static func getCacheUserModel() -> VTBaseUserInfoModel {
+    static func getCacheUserModel() -> VTBaseUserInfoModel? {
         return getSaveData();
     }
     
@@ -38,9 +38,9 @@ class VTUserInfoCache: NSObject {
         NSKeyedArchiver.archiveRootObject(modelData, toFile: fileCachePath);
     }
     
-    private static func getSaveData() -> VTBaseUserInfoModel {
+    private static func getSaveData() -> VTBaseUserInfoModel? {
         let fileCachePath = filePath();
-        let archive = NSKeyedUnarchiver.unarchiveObject(withFile: fileCachePath) as! VTBaseUserInfoModel;
+        let archive = NSKeyedUnarchiver.unarchiveObject(withFile: fileCachePath) as? VTBaseUserInfoModel ?? nil;
         return archive;
     }
     

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>common/icon/chat</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.105882 0 0 0 0 0.250980 0 0 0 0 0.117647 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A-01-T-01首页-推荐-双列-en" transform="translate(-228.000000, -622.000000)">
+            <g id="Chat" transform="translate(0.000000, 614.000000)" filter="url(#filter-1)">
+                <g transform="translate(214.146449, 8.000000)">
+                    <g id="common/icon/moment" transform="translate(14.000000, 0.000000)" fill="#000000" fill-rule="nonzero">
+                        <g id="chat-smile-3-line">
+                            <rect id="矩形" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                            <g id="编组-2" transform="translate(2.000000, 2.000000)">
+                                <path d="M8.06316065,0 C12.446677,0 16,3.5816 16,8 C16,12.4184 12.446677,16 8.06316065,16 L0.126321303,16 L0.126321303,16 C-0.110783003,16 0.0586448022,15.6344339 0.0586448022,15.6344339 C0.265455317,15.397947 1.06291423,14.7387357 2.45102155,13.6568 C0.96026982,12.1580807 0.123637139,10.1222639 0.126321303,8 C0.126321303,3.5816 3.67964428,0 8.06316065,0 Z M7.833,8.33333334 L5.0408808,8.33379427 L4.93528083,8.3388813 C3.5108469,8.48358766 5.88660661,11.6671276 7.68571603,11.6671276 L7.68571603,11.6671276 L7.833,11.6623333 L7.833,8.33333334 Z M10.6254525,8.33379427 L7.83333334,8.33333334 L7.83333334,11.6623333 L7.98061731,11.6671276 L8.11322508,11.6615364 C9.89335677,11.5136407 12.1207441,8.48005823 10.7310525,8.3388813 L10.7310525,8.3388813 L10.6254525,8.33379427 Z" id="形状结合"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
