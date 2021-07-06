@@ -94,7 +94,7 @@ def all_Pods
     pod 'Appz'
 # SVG
     pod 'SVGKit'
-#    pod 'Reachability'
+    pod 'Reachability'
 #    pod 'LDNetDiagnoService'
 end
 
