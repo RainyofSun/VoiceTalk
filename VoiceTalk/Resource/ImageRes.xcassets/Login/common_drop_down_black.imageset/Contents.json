@@ -5,12 +5,12 @@
       "scale" : "1x"
     },
     {
-      "filename" : "register_icon_prompt@2x.png",
+      "filename" : "common_drop_down_black@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "register_icon_prompt@3x.png",
+      "filename" : "common_drop_down_black@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
