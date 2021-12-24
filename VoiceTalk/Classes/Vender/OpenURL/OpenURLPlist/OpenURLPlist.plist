@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>webhosts</key>
+	<array>
+		<string>hz.kkgoo.cn</string>
+		<string>www.kkgoo.cn</string>
+	</array>
+	<key>paths</key>
+	<dict>
+		<key>phoneLogin</key>
+		<dict>
+			<key>controller</key>
+			<string>VTPhoneLoginViewController</string>
+			<key>context</key>
+			<string>VTOpenPageContext</string>
+		</dict>
+		<key></key>
+		<dict>
+			<key>context</key>
+			<string>VTOpenPageContext</string>
+			<key>open_style</key>
+			<string>2</string>
+			<key>controller</key>
+			<string>VTHomePageViewController</string>
+		</dict>
+	</dict>
+	<key>schemes</key>
+	<array>
+		<string>nice</string>
+		<string>nicelive</string>
+	</array>
+</dict>
+</plist>

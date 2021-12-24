@@ -10,6 +10,6 @@ import UIKit
 
 class VTBaseViewModel: NSObject {
     deinit {
-        printLog(String(format: "DELLOC %@", self));
+        printLog(String(format: "DELLOC : ", self));
     }
 }

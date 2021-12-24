@@ -10,12 +10,36 @@ import UIKit
 
 class VTBaseViewController: UIViewController {
 
+    public weak var openURLContext: VTOpenURLContext?
+    fileprivate(set) var openURLParameters: Dictionary<String,Any>?
+    
+    // MARK - Public methods
+    required init(context:VTOpenURLContext) {
+        super.init(nibName: nil, bundle: nil)
+        self.openURLContext = context
+        self.openURLParameters = context.parameters
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        if above_ios_13 {
+            self.modalPresentationStyle = .fullScreen
+        }
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
+    deinit {
+        printLog("DELLOC : ",self.description)
+    }
 
     /*
     // MARK: - Navigation

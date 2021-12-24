@@ -34,11 +34,11 @@ class VTImageViewController: VTBaseAlertViewController {
         self.alertImgView.image = UIImage.init(named: self.imgName != nil ? self.imgName! : "register_icon_prompt");
         
         self.contentLab.text = self.message;
-        self.contentLab.textColor = appSubTextColor;
+        self.contentLab.textColor = VT999999Color;
         self.contentLab.font = appFont(fontSize: 15);
         
         self.sureBtn.setTitle(LanguageTool.language(key: "我知道了"), for: UIControl.State.normal);
-        self.sureBtn.setTitleColor(mainColor, for: UIControl.State.normal);
+        self.sureBtn.setTitleColor(VTMainColor, for: UIControl.State.normal);
         self.sureBtn.layer.cornerRadius = 8;
         self.sureBtn.clipsToBounds = true;
         self.sureBtn.addTarget(self, action: #selector(disDialog(_ :)), for: UIControl.Event.touchUpInside);

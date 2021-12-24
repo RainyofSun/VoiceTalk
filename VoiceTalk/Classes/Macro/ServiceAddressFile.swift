@@ -9,7 +9,7 @@
 import Foundation
 
 /// 测试环境地址
-let DebugServiceAddress = "http://10.0.8.21:8083/v3";
+let DebugServiceAddress = "https://api.kkgoo.cn/";
 /// 正式环境地址
 let ReleaseServiceAddress = "http://120.133.27.180:8083/v1";
 

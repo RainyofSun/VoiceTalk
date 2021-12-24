@@ -18,48 +18,72 @@
 import UIKit
 
 class VTMainViewController: UIViewController {
-    
-    let reachability = try! Reachability();
     let mainVM = VTMainViewModel();
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // 开始网络监测
-        openNetworkStatusObserver();
+        VTNetWorkStatusManager.shared.startNetworkReachabilityObserver()
         loadTabbarController();
         self.mainVM.loginExpirOrNot();
         addUserGuideView();
         // Do any additional setup after loading the view.
-        let lab = UILabel.init();
-        lab.text = LanguageTool.language(key: "我知道了");
-        lab.textColor = mainColor;
-        self.view.addSubview(lab);
-        lab.snp.makeConstraints { (make) in
-            make.center.equalTo(self.view);
-        }
+//        let lab = UILabel.init();
+//        lab.text = LanguageTool.language(key: "我知道了");
+//        lab.textColor = mainColor;
+//        self.view.addSubview(lab);
+//        lab.snp.makeConstraints { (make) in
+//            make.center.equalTo(self.view);
+//        }
+        
+//        testStr()
+//        testDict()
+        commonInit()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.mainVM.checkAppVersion();
+//        self.mainVM.checkAppVersion();
+//        commonReques()
+        testRoute()
+    }
+    
+    func commonReques() {
+        
+//        let username = "chensx1993".urlEscaped
+//        let url = "users/\(username)"
+//        let parameters = ["sort": "pushed"]
+//
+//        VTRequest.post(url, parameters: parameters, callbackQueue: .main, progress: nil) { response in
+//            do {
+//                let json = try response.mapJSON()
+//                printLog("test post \(url): \(json)");
+//
+//            } catch(let error) {
+//                printLog("error: \(error)");
+//            }
+//        } failure: { error in
+//            printLog("error: \(error)");
+//        }
+        
+//        let url1 = "toutiao/index"
+//        let parameters1:[String:Any] = ["page": "1","page_size":20,"type":"top","key":"1556e6a8727672ced0deb4007782429c"]
+//        VTRequest.get(url1, parameters: parameters1, callbackQueue: DispatchQueue.main, progress: { (progress) in
+//
+//        }, success: { (response) in
+//            do {
+//                let json = try response.mapJSON()
+//                print("test post \(url): \(json)");
+//
+//            } catch(let error) {
+//                print("error: \(error)");
+//            }
+//        }) { (error) in
+//            print("error: \(error)");
+//        }
     }
     
     deinit {
         printLog(String(format: "%@", self));
-        reachability.stopNotifier();
-    }
- 
-    // 开启网络监测
-    private func openNetworkStatusObserver() {
-        reachability.whenReachable = { reachability in
-            if reachability.connection == Reachability.Connection.wifi {
-                printLog("当前网络为Wi-Fi");
-            } else if reachability.connection == Reachability.Connection.cellular {
-                printLog("当前网络类型为 流量");
-            } else if reachability.connection == Reachability.Connection.unavailable {
-                printLog("当前网络不可达");
-            }
-        }
-        try?reachability.startNotifier();
     }
     
     private func addUserGuideView() {
@@ -96,4 +120,37 @@ class VTMainViewController: UIViewController {
     }
     */
 
+}
+
+extension VTMainViewController {
+    func testStr() {
+//        var str = "htsps://www.baidu.com?uid=888&index=10"
+//        printLog(str.substringFromIndex(index: 5))
+//        printLog(str.substringToIndex(index: 4))
+//        var str = "天空上有美丽的星球" // 上有美丽
+//        printLog(str.substringWithRange(loc: 2, len: 4))
+//        guard str.contains("?") else {
+//            printLog("ssss")
+//            return
+//        }
+//        let range: Range = str.range(of: "?")!
+//        str = String(str[range.upperBound...])
+//        printLog(str)
+    }
+    func testDict() {
+        let dict1 = ["1":1,"2":2]
+        let dict2 = Dictionary<String, Any>.dictionaryWithDictionary(otherDict: dict1)
+        printLog(dict2)
+    }
+    
+    func commonInit() {
+        let path: String = Bundle.main.path(forResource: "OpenURLPlist", ofType: "plist")!
+        let list = NSDictionary(contentsOfFile: path)
+        printLog(list as Any)
+    }
+    
+    func testRoute() {
+//        VTOpenURLManager.shared.openURL(url: NSURL.init(string: "nice://phoneLogin")!, callback: nil)
+        VTOpenURLManager.shared.openURL(url: NSURL.init(string: "nice://phoneLogin")!, openStyle: .VTOpenPageStylePresent, parameters: nil, callback: nil)
+    }
 }

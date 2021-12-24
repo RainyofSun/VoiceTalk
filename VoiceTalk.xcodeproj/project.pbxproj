@@ -83,6 +83,32 @@
 		227DD4A42627E402006C8377 /* VTMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227DD4A32627E402006C8377 /* VTMainViewController.swift */; };
 		227DD4A72627E78B006C8377 /* VTBaseUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227DD4A62627E78B006C8377 /* VTBaseUserInfoModel.swift */; };
 		2C897C4E7391D58180909938 /* Pods_VoiceTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FFA416FF0B0A4CC58F41A1 /* Pods_VoiceTalk.framework */; };
+		C820C0732761E6C300625CA9 /* VTServerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C0722761E6C200625CA9 /* VTServerType.swift */; };
+		C820C0762761EA9800625CA9 /* VTServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C0752761EA9800625CA9 /* VTServer.swift */; };
+		C820C0792761FDF200625CA9 /* VTNetWorkStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C0782761FDF200625CA9 /* VTNetWorkStatusManager.swift */; };
+		C820C07B2762277A00625CA9 /* VTNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C07A2762277900625CA9 /* VTNetwork.swift */; };
+		C820C07F2762281800625CA9 /* VTNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C07E2762281800625CA9 /* VTNetworkError.swift */; };
+		C820C08527632BFC00625CA9 /* VTNetResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C08427632BFC00625CA9 /* VTNetResponse.swift */; };
+		C820C08827633EB700625CA9 /* VTNetworkActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C08727633EB700625CA9 /* VTNetworkActivityPlugin.swift */; };
+		C820C08A27633F4300625CA9 /* VTLoggorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C08927633F4300625CA9 /* VTLoggorPlugin.swift */; };
+		C820C08C2763416D00625CA9 /* VTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C08B2763416D00625CA9 /* VTRequest.swift */; };
+		C820C094276350C900625CA9 /* VTString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C093276350C900625CA9 /* VTString.swift */; };
+		C85EACE0276B57A5001A9F9C /* OpenURLPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85EACDF276B57A4001A9F9C /* OpenURLPlist.plist */; };
+		C87ED5DE2771571A00C68193 /* VTOpenPageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5DD2771571A00C68193 /* VTOpenPageContext.swift */; };
+		C87ED5E42772CE9300C68193 /* VTPhoneLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5E32772CE9300C68193 /* VTPhoneLoginViewController.swift */; };
+		C87ED5E72773308D00C68193 /* VTObjectMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5E62773308B00C68193 /* VTObjectMethod.swift */; };
+		C87ED5EC2774511100C68193 /* VTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5EB2774511100C68193 /* VTTabBar.swift */; };
+		C87ED5EF27748C0600C68193 /* VTTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5EE27748C0500C68193 /* VTTabBarItem.swift */; };
+		C87ED5F227748D9C00C68193 /* VTRedPointLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5F127748D9B00C68193 /* VTRedPointLabel.swift */; };
+		C87F7CB427672134009407AE /* VTNetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CB327672134009407AE /* VTNetHeader.swift */; };
+		C87F7CB727672E76009407AE /* VTOpenURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CB627672E76009407AE /* VTOpenURLError.swift */; };
+		C87F7CBB27673171009407AE /* VTOpenURLContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CBA27673171009407AE /* VTOpenURLContext.swift */; };
+		C87F7CBE2767334F009407AE /* VTOpenURLPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CBD2767334F009407AE /* VTOpenURLPreset.swift */; };
+		C87F7CC027673370009407AE /* VTOpenURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CBF27673370009407AE /* VTOpenURLComponents.swift */; };
+		C87F7CC327673A30009407AE /* VTOpenURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CC227673A30009407AE /* VTOpenURLManager.swift */; };
+		C8D4ADC5276874DD007291EF /* VTStringURLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */; };
+		C8E1D7D5276AD8A1005C9E6D /* VTArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */; };
+		C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +197,32 @@
 		227DD49B2627DD9A006C8377 /* VoiceTalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceTalk-Bridging-Header.h"; sourceTree = "<group>"; };
 		227DD4A32627E402006C8377 /* VTMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTMainViewController.swift; sourceTree = "<group>"; };
 		227DD4A62627E78B006C8377 /* VTBaseUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBaseUserInfoModel.swift; sourceTree = "<group>"; };
+		C820C0722761E6C200625CA9 /* VTServerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTServerType.swift; sourceTree = "<group>"; };
+		C820C0752761EA9800625CA9 /* VTServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTServer.swift; sourceTree = "<group>"; };
+		C820C0782761FDF200625CA9 /* VTNetWorkStatusManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetWorkStatusManager.swift; sourceTree = "<group>"; };
+		C820C07A2762277900625CA9 /* VTNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetwork.swift; sourceTree = "<group>"; };
+		C820C07E2762281800625CA9 /* VTNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetworkError.swift; sourceTree = "<group>"; };
+		C820C08427632BFC00625CA9 /* VTNetResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetResponse.swift; sourceTree = "<group>"; };
+		C820C08727633EB700625CA9 /* VTNetworkActivityPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetworkActivityPlugin.swift; sourceTree = "<group>"; };
+		C820C08927633F4300625CA9 /* VTLoggorPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTLoggorPlugin.swift; sourceTree = "<group>"; };
+		C820C08B2763416D00625CA9 /* VTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTRequest.swift; sourceTree = "<group>"; };
+		C820C093276350C900625CA9 /* VTString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTString.swift; sourceTree = "<group>"; };
+		C85EACDF276B57A4001A9F9C /* OpenURLPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OpenURLPlist.plist; sourceTree = "<group>"; };
+		C87ED5DD2771571A00C68193 /* VTOpenPageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenPageContext.swift; sourceTree = "<group>"; };
+		C87ED5E32772CE9300C68193 /* VTPhoneLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPhoneLoginViewController.swift; sourceTree = "<group>"; };
+		C87ED5E62773308B00C68193 /* VTObjectMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTObjectMethod.swift; sourceTree = "<group>"; };
+		C87ED5EB2774511100C68193 /* VTTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabBar.swift; sourceTree = "<group>"; };
+		C87ED5EE27748C0500C68193 /* VTTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabBarItem.swift; sourceTree = "<group>"; };
+		C87ED5F127748D9B00C68193 /* VTRedPointLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTRedPointLabel.swift; sourceTree = "<group>"; };
+		C87F7CB327672134009407AE /* VTNetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetHeader.swift; sourceTree = "<group>"; };
+		C87F7CB627672E76009407AE /* VTOpenURLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLError.swift; sourceTree = "<group>"; };
+		C87F7CBA27673171009407AE /* VTOpenURLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLContext.swift; sourceTree = "<group>"; };
+		C87F7CBD2767334F009407AE /* VTOpenURLPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLPreset.swift; sourceTree = "<group>"; };
+		C87F7CBF27673370009407AE /* VTOpenURLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLComponents.swift; sourceTree = "<group>"; };
+		C87F7CC227673A30009407AE /* VTOpenURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLManager.swift; sourceTree = "<group>"; };
+		C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTStringURLEncode.swift; sourceTree = "<group>"; };
+		C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTArray.swift; sourceTree = "<group>"; };
+		C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTDictionary.swift; sourceTree = "<group>"; };
 		FE0FBD641A917A87465F7D4E /* Pods-VoiceTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceTalk.debug.xcconfig"; path = "Target Support Files/Pods-VoiceTalk/Pods-VoiceTalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +300,7 @@
 		22079C402623EA130039C406 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C87ED5F027748D5800C68193 /* Widget */,
 				227DD4992627248B006C8377 /* Vender */,
 				227DD49826272484006C8377 /* Tool */,
 				227DD4972627247E006C8377 /* Other */,
@@ -387,6 +440,8 @@
 			isa = PBXGroup;
 			children = (
 				22192DF9262D8D160018E7B7 /* VTTabbarViewController.swift */,
+				C87ED5EB2774511100C68193 /* VTTabBar.swift */,
+				C87ED5EE27748C0500C68193 /* VTTabBarItem.swift */,
 			);
 			path = TabbarVC;
 			sourceTree = "<group>";
@@ -403,6 +458,10 @@
 		221CF1B026462B7200593DF4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C87ED5E52773303400C68193 /* Object */,
+				C8E1D7D6276AE28E005C9E6D /* Dictionary */,
+				C8E1D7D3276AD890005C9E6D /* Array */,
+				C8D4ADD22769C1CC007291EF /* String */,
 				221CF1B126462B7200593DF4 /* Date.swift */,
 				221CF1B226462B7200593DF4 /* TopController.swift */,
 				222F7A33264A1EA8004FB29A /* MapExtension.swift */,
@@ -479,133 +538,6 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
-		222F7A1926493375004FB29A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				222F7A1C26493395004FB29A /* ThirdLogin */,
-				222F7A1B26493389004FB29A /* PwdLogin */,
-				222F7A1A26493380004FB29A /* PhoneLogin */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		222F7A1A26493380004FB29A /* PhoneLogin */ = {
-			isa = PBXGroup;
-			children = (
-				222F7A1F264933D7004FB29A /* Model */,
-				222F7A20264933D7004FB29A /* VC */,
-				222F7A1E264933D7004FB29A /* View */,
-				222F7A1D264933D7004FB29A /* VM */,
-			);
-			path = PhoneLogin;
-			sourceTree = "<group>";
-		};
-		222F7A1B26493389004FB29A /* PwdLogin */ = {
-			isa = PBXGroup;
-			children = (
-				222F7A24264933DE004FB29A /* Model */,
-				222F7A23264933DE004FB29A /* VC */,
-				222F7A21264933DE004FB29A /* View */,
-				222F7A22264933DE004FB29A /* VM */,
-			);
-			path = PwdLogin;
-			sourceTree = "<group>";
-		};
-		222F7A1C26493395004FB29A /* ThirdLogin */ = {
-			isa = PBXGroup;
-			children = (
-				222F7A27264933E5004FB29A /* Model */,
-				222F7A28264933E5004FB29A /* VC */,
-				222F7A26264933E5004FB29A /* View */,
-				222F7A25264933E5004FB29A /* VM */,
-			);
-			path = ThirdLogin;
-			sourceTree = "<group>";
-		};
-		222F7A1D264933D7004FB29A /* VM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		222F7A1E264933D7004FB29A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		222F7A1F264933D7004FB29A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		222F7A20264933D7004FB29A /* VC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		222F7A21264933DE004FB29A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		222F7A22264933DE004FB29A /* VM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		222F7A23264933DE004FB29A /* VC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
-		222F7A24264933DE004FB29A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		222F7A25264933E5004FB29A /* VM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VM;
-			sourceTree = "<group>";
-		};
-		222F7A26264933E5004FB29A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		222F7A27264933E5004FB29A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		222F7A28264933E5004FB29A /* VC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
 		222F7A2A264938F3004FB29A /* Net */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,7 +588,7 @@
 		227DD49626272472006C8377 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				222F7A1926493375004FB29A /* Login */,
+				C8704F502760C9520096E58B /* Login */,
 				22192DE7262D8C1F0018E7B7 /* Mine */,
 				22192DE6262D8C180018E7B7 /* Chat */,
 				22192DE5262D8C070018E7B7 /* ZoneDynamic */,
@@ -686,6 +618,8 @@
 		227DD4992627248B006C8377 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C87F7CB527672D60009407AE /* OpenURL */,
+				C820C0702761E5AD00625CA9 /* Net */,
 				221D0C3926352201009F53DA /* SwiftProgressHUD */,
 				22142C43262876A700C3499C /* RazzleDazzle */,
 			);
@@ -740,6 +674,214 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C820C0702761E5AD00625CA9 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				C87F7CB227672118009407AE /* Header */,
+				C820C08627633E7700625CA9 /* Plugin */,
+				C820C08327632BDD00625CA9 /* Response */,
+				C820C07D276227EA00625CA9 /* Error */,
+				C820C0772761FDB300625CA9 /* Core */,
+				C820C0742761EA8600625CA9 /* Server */,
+				C820C0712761E5DC00625CA9 /* API */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		C820C0712761E5DC00625CA9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C820C0722761E6C200625CA9 /* VTServerType.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C820C0742761EA8600625CA9 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				C820C0752761EA9800625CA9 /* VTServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		C820C0772761FDB300625CA9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C820C0782761FDF200625CA9 /* VTNetWorkStatusManager.swift */,
+				C820C07A2762277900625CA9 /* VTNetwork.swift */,
+				C820C08B2763416D00625CA9 /* VTRequest.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C820C07D276227EA00625CA9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C820C07E2762281800625CA9 /* VTNetworkError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C820C08327632BDD00625CA9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				C820C08427632BFC00625CA9 /* VTNetResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		C820C08627633E7700625CA9 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				C820C08727633EB700625CA9 /* VTNetworkActivityPlugin.swift */,
+				C820C08927633F4300625CA9 /* VTLoggorPlugin.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		C85EACDE276B577E001A9F9C /* OpenURLPlist */ = {
+			isa = PBXGroup;
+			children = (
+				C85EACDF276B57A4001A9F9C /* OpenURLPlist.plist */,
+			);
+			path = OpenURLPlist;
+			sourceTree = "<group>";
+		};
+		C8704F502760C9520096E58B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C8704F562760C97C0096E58B /* PasswordLogin */,
+				C8704F552760C97C0096E58B /* PhoneLogin */,
+				C8704F542760C97C0096E58B /* ThirdLogin */,
+				C8704F522760C9520096E58B /* SMSLogin */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C8704F522760C9520096E58B /* SMSLogin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SMSLogin;
+			sourceTree = "<group>";
+		};
+		C8704F542760C97C0096E58B /* ThirdLogin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdLogin;
+			sourceTree = "<group>";
+		};
+		C8704F552760C97C0096E58B /* PhoneLogin */ = {
+			isa = PBXGroup;
+			children = (
+				C87ED5E32772CE9300C68193 /* VTPhoneLoginViewController.swift */,
+			);
+			path = PhoneLogin;
+			sourceTree = "<group>";
+		};
+		C8704F562760C97C0096E58B /* PasswordLogin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PasswordLogin;
+			sourceTree = "<group>";
+		};
+		C87ED5E52773303400C68193 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				C87ED5E62773308B00C68193 /* VTObjectMethod.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		C87ED5F027748D5800C68193 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C87ED5F127748D9B00C68193 /* VTRedPointLabel.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		C87F7CB227672118009407AE /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				C87F7CB327672134009407AE /* VTNetHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		C87F7CB527672D60009407AE /* OpenURL */ = {
+			isa = PBXGroup;
+			children = (
+				C85EACDE276B577E001A9F9C /* OpenURLPlist */,
+				C87F7CC127673A11009407AE /* OpenURLManager */,
+				C87F7CBC27673337009407AE /* Preset */,
+				C87F7CB92767314C009407AE /* Contexts */,
+				C87F7CB827672E7C009407AE /* Error */,
+			);
+			path = OpenURL;
+			sourceTree = "<group>";
+		};
+		C87F7CB827672E7C009407AE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				C87F7CB627672E76009407AE /* VTOpenURLError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		C87F7CB92767314C009407AE /* Contexts */ = {
+			isa = PBXGroup;
+			children = (
+				C87F7CBA27673171009407AE /* VTOpenURLContext.swift */,
+				C87ED5DD2771571A00C68193 /* VTOpenPageContext.swift */,
+			);
+			path = Contexts;
+			sourceTree = "<group>";
+		};
+		C87F7CBC27673337009407AE /* Preset */ = {
+			isa = PBXGroup;
+			children = (
+				C87F7CBD2767334F009407AE /* VTOpenURLPreset.swift */,
+				C87F7CBF27673370009407AE /* VTOpenURLComponents.swift */,
+			);
+			path = Preset;
+			sourceTree = "<group>";
+		};
+		C87F7CC127673A11009407AE /* OpenURLManager */ = {
+			isa = PBXGroup;
+			children = (
+				C87F7CC227673A30009407AE /* VTOpenURLManager.swift */,
+			);
+			path = OpenURLManager;
+			sourceTree = "<group>";
+		};
+		C8D4ADD22769C1CC007291EF /* String */ = {
+			isa = PBXGroup;
+			children = (
+				C820C093276350C900625CA9 /* VTString.swift */,
+				C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		C8E1D7D3276AD890005C9E6D /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		C8E1D7D6276AE28E005C9E6D /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -768,6 +910,7 @@
 		22079C1C2623E6270039C406 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = VT;
 				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = macos;
@@ -814,6 +957,7 @@
 				221CF1CE26462D9700593DF4 /* ImageRes.xcassets in Resources */,
 				22142C7F26292F9A00C3499C /* GuideRes.xcassets in Resources */,
 				221CF1CA26462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf in Resources */,
+				C85EACE0276B57A5001A9F9C /* OpenURLPlist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -867,10 +1011,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				221CF1B826462C1D00593DF4 /* VTBaseAlertViewController.swift in Sources */,
+				C87ED5DE2771571A00C68193 /* VTOpenPageContext.swift in Sources */,
 				22142C62262876A700C3499C /* PathPositionAnimation.swift in Sources */,
 				22142C66262876A700C3499C /* ConstraintConstantAnimation.swift in Sources */,
 				225F4E3B26286635004FB177 /* VTBaseModel.swift in Sources */,
 				221D0C10263520C2009F53DA /* VTHudTool.swift in Sources */,
+				C87ED5E42772CE9300C68193 /* VTPhoneLoginViewController.swift in Sources */,
 				22079C282623E6270039C406 /* AppDelegate.swift in Sources */,
 				22079C3F2623EA050039C406 /* VTBaseViewController.swift in Sources */,
 				22142C79262876A700C3499C /* ScaleAnimation.swift in Sources */,
@@ -878,42 +1024,62 @@
 				221CF1B526462B7300593DF4 /* TopController.swift in Sources */,
 				221CF1B326462B7300593DF4 /* UIImage+SVGManager.m in Sources */,
 				22142C7D26292DE800C3499C /* AppGuideAnimationViewController.swift in Sources */,
+				C820C0762761EA9800625CA9 /* VTServer.swift in Sources */,
 				22142C7A262876A700C3499C /* CornerRadiusAnimation.swift in Sources */,
 				221CF1B426462B7300593DF4 /* Date.swift in Sources */,
 				222F7A2C26493924004FB29A /* VersionAPI.swift in Sources */,
 				222F7A31264940D3004FB29A /* DeviceInfoFile.swift in Sources */,
 				221D0C3B2635221E009F53DA /* SwiftProgressHUD.swift in Sources */,
+				C820C0792761FDF200625CA9 /* VTNetWorkStatusManager.swift in Sources */,
 				22142C6D262876A700C3499C /* UIView+Transform.swift in Sources */,
+				C8D4ADC5276874DD007291EF /* VTStringURLEncode.swift in Sources */,
 				22192DED262D8C8F0018E7B7 /* VTHomePageViewController.swift in Sources */,
+				C87F7CBB27673171009407AE /* VTOpenURLContext.swift in Sources */,
 				221CF1C126462C7300593DF4 /* VTImageViewController.swift in Sources */,
 				22142C68262876A700C3499C /* BackgroundColorAnimation.swift in Sources */,
 				221D0A5D2632706C009F53DA /* VTBaseNavViewController.swift in Sources */,
 				22142C73262876A700C3499C /* Animatable.swift in Sources */,
 				22142C69262876A700C3499C /* ScrollViewPageConstraintAnimation.swift in Sources */,
+				C87F7CC327673A30009407AE /* VTOpenURLManager.swift in Sources */,
+				C87ED5E72773308D00C68193 /* VTObjectMethod.swift in Sources */,
 				221CF1BD26462C4C00593DF4 /* MinSpaceFile.swift in Sources */,
 				22142C71262876A700C3499C /* LayerStrokeColorAnimation.swift in Sources */,
+				C87F7CC027673370009407AE /* VTOpenURLComponents.swift in Sources */,
 				222F7A3E264A3793004FB29A /* VTVersionModel.swift in Sources */,
 				22142C6E262876A700C3499C /* Interpolatable.swift in Sources */,
 				22142C70262876A700C3499C /* ConstraintMultiplierAnimation.swift in Sources */,
 				22142C74262876A700C3499C /* HideAnimation.swift in Sources */,
 				22142C75262876A700C3499C /* Animator.swift in Sources */,
+				C820C08527632BFC00625CA9 /* VTNetResponse.swift in Sources */,
+				C820C08827633EB700625CA9 /* VTNetworkActivityPlugin.swift in Sources */,
+				C820C08A27633F4300625CA9 /* VTLoggorPlugin.swift in Sources */,
+				C87ED5EF27748C0600C68193 /* VTTabBarItem.swift in Sources */,
 				22142C87262963CA00C3499C /* ServiceAddressFile.swift in Sources */,
+				C820C07B2762277A00625CA9 /* VTNetwork.swift in Sources */,
 				222F7A47264A66E5004FB29A /* VTVersionViewController.swift in Sources */,
 				22142C64262876A700C3499C /* CubicBezier.swift in Sources */,
 				222F7A34264A1EA8004FB29A /* MapExtension.swift in Sources */,
+				C87F7CB727672E76009407AE /* VTOpenURLError.swift in Sources */,
 				227DD4A42627E402006C8377 /* VTMainViewController.swift in Sources */,
 				22192DF3262D8CC20018E7B7 /* VTChatPageViewController.swift in Sources */,
 				22142C6A262876A700C3499C /* Animation.swift in Sources */,
 				22142C63262876A700C3499C /* EasingFunction.swift in Sources */,
 				221D0C3F26354355009F53DA /* VTUserInfoCache.swift in Sources */,
+				C87ED5F227748D9C00C68193 /* VTRedPointLabel.swift in Sources */,
+				C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */,
 				221D0BEB263514CE009F53DA /* UserDefaultsKeyFile.swift in Sources */,
 				22142C78262876A700C3499C /* Filmstrip.swift in Sources */,
 				22142C76262876A700C3499C /* LabelTextColorAnimation.swift in Sources */,
 				22142C6B262876A700C3499C /* LayerStrokeStartAnimation.swift in Sources */,
 				22142C6C262876A700C3499C /* LayerFillColorAnimation.swift in Sources */,
+				C87F7CBE2767334F009407AE /* VTOpenURLPreset.swift in Sources */,
 				22192DFA262D8D160018E7B7 /* VTTabbarViewController.swift in Sources */,
+				C820C07F2762281800625CA9 /* VTNetworkError.swift in Sources */,
+				C820C08C2763416D00625CA9 /* VTRequest.swift in Sources */,
 				22142C85262961F000C3499C /* ServiceInterviceFile.swift in Sources */,
+				C87ED5EC2774511100C68193 /* VTTabBar.swift in Sources */,
 				221CF1BC26462C4C00593DF4 /* FontFile.swift in Sources */,
+				C820C0732761E6C300625CA9 /* VTServerType.swift in Sources */,
 				22142C832629317900C3499C /* MacroFile.swift in Sources */,
 				22192DF0262D8CB30018E7B7 /* VTZoneDynamicPageViewController.swift in Sources */,
 				22192DF6262D8CD00018E7B7 /* VTMinePageViewController.swift in Sources */,
@@ -923,11 +1089,14 @@
 				22142C65262876A700C3499C /* RotationAnimation.swift in Sources */,
 				221D0BC32632AEF4009F53DA /* BundlePathFile.swift in Sources */,
 				22142C67262876A700C3499C /* AnimatedPagingScrollViewController.swift in Sources */,
+				C820C094276350C900625CA9 /* VTString.swift in Sources */,
 				227DD4A72627E78B006C8377 /* VTBaseUserInfoModel.swift in Sources */,
+				C8E1D7D5276AD8A1005C9E6D /* VTArray.swift in Sources */,
 				22142C6F262876A700C3499C /* LayerStrokeEndAnimation.swift in Sources */,
 				22142C77262876A700C3499C /* TranslationAnimation.swift in Sources */,
 				225F4E3D26286C7C004FB177 /* SwiftLibFile.swift in Sources */,
 				221D0BE826351076009F53DA /* VTMainViewModel.swift in Sources */,
+				C87F7CB427672134009407AE /* VTNetHeader.swift in Sources */,
 				222F7A0726491061004FB29A /* LanguageTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1090,6 +1259,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.20.50;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zondadd.VoiceTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VoiceTalk/SupportFiles/VoiceTalk-Bridging-Header.h";
@@ -1118,6 +1288,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.20.50;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zondadd.VoiceTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VoiceTalk/SupportFiles/VoiceTalk-Bridging-Header.h";

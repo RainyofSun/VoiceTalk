@@ -14,6 +14,18 @@ import UIKit
 let ios_version = Double(UIDevice().systemVersion);
 // 大于 iOS 10的系统
 let above_ios_10 = ios_version! >= 10.0 ? true : false;
+// 大于 iOS 11的系统
+let above_ios_11 = ios_version! >= 11.0 ? true : false;
+// 大于 iOS 12的系统
+let above_ios_12 = ios_version! >= 12.0 ? true : false;
+// 大于 iOS 13的系统
+let above_ios_13 = ios_version! >= 13.0 ? true : false;
+// 大于 iOS 14的系统
+let above_ios_14 = ios_version! >= 14.0 ? true : false;
+// 大于 iOS 15的系统
+let above_ios_15 = ios_version! >= 15.0 ? true : false;
+// 大于 iOS 16的系统
+let above_ios_16 = ios_version! >= 16.0 ? true : false;
 
 // 屏幕宽度
 let screen_width = UIScreen.main.bounds.size.width;

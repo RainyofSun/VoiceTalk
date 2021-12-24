@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VTTabbarViewController: RAMAnimatedTabBarController {
+class VTTabbarViewController: UITabBarController {
 
     override func viewDidLoad() {
         addAllChildsController();
@@ -29,30 +29,20 @@ class VTTabbarViewController: RAMAnimatedTabBarController {
     
     private func addAllChildsController() {
         // 首页
-        addChildVC(childVC: VTHomePageViewController(), itemTitle: "首页", title: nil, imageNormal: "tab_home", imageSelected: "tab_home_selected",itemAnimation: RAMRotationAnimation());
+        addChildVC(childVC: VTHomePageViewController(), itemTitle: "首页", title: nil, imageNormal: "tab_home", imageSelected: "tab_home_selected");
         // 动态
-        addChildVC(childVC: VTZoneDynamicPageViewController(), itemTitle: "动态", title: nil, imageNormal: "tab_moment", imageSelected: "tab_moment_selected",itemAnimation: RAMBounceAnimation());
+        addChildVC(childVC: VTZoneDynamicPageViewController(), itemTitle: "动态", title: nil, imageNormal: "tab_moment", imageSelected: "tab_moment_selected");
         // 聊天
-        addChildVC(childVC: VTChatPageViewController(), itemTitle: "聊天", title: nil, imageNormal: "tab_chat", imageSelected: "tab_chat_selected",itemAnimation: RAMBounceAnimation());
+        addChildVC(childVC: VTChatPageViewController(), itemTitle: "聊天", title: nil, imageNormal: "tab_chat", imageSelected: "tab_chat_selected");
         // 我的
-        addChildVC(childVC: VTMinePageViewController(), itemTitle: "我的", title: nil, imageNormal: "tab_mine", imageSelected: "tab_mine_selected",itemAnimation: RAMBounceAnimation());
+        addChildVC(childVC: VTMinePageViewController(), itemTitle: "我的", title: nil, imageNormal: "tab_mine", imageSelected: "tab_mine_selected");
     }
     
-    private func addChildVC(childVC:VTBaseViewController, itemTitle: String, title :String?, imageNormal:String, imageSelected:String, itemAnimation:RAMItemAnimation) {
+    private func addChildVC(childVC:VTBaseViewController, itemTitle: String, title :String?, imageNormal:String, imageSelected:String) {
         let navVC = VTBaseNavViewController.init(rootViewController: childVC);
         navVC.navigationBar.isHidden = (title == nil || title?.count == 0);
         let normalFilePath = SVGResourcePath(fileName: "TabBar", imgName: imageNormal);
         let selectedFilePath = SVGResourcePath(fileName: "TabBar", imgName: imageSelected);
-        let item = RAMAnimatedTabBarItem(title: itemTitle, image: UIImage.svgImage(withContentFile: normalFilePath), selectedImage: UIImage.svgImage(withContentFile: selectedFilePath));
-        item.textColor = tabbarNormalColor;
-        item.textFontSize = 14;
-        item.iconColor = tabbarNormalColor;
-        item.animation = itemAnimation;
-        item.imageInsets = UIEdgeInsets.init(top: 6, left: 0, bottom: -6, right: 0);
-        item.animation.textSelectedColor = tabbarSelectedColor;
-        item.animation.iconSelectedColor = tabbarSelectedColor;
-        addChild(navVC);
-        navVC.tabBarItem = item;
     }
     
     /*

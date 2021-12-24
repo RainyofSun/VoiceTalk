@@ -4,13 +4,13 @@ use_frameworks!
 
 def all_Pods
 # 参考库使用链接 https://www.jianshu.com/p/b9569ade2a75
+# 响应式框架
+    pod 'ReactiveSwift', '7.0.0'
 # 网络封装库
-    pod 'Alamofire'
-    pod 'Moya', '~> 14.0'
+    pod 'Alamofire', '5.4.4'
+    pod 'Moya', '14.0'
 # 加载指示器
     pod 'NVActivityIndicatorView'
-# 下拉刷新控件
-#   pod 'DGElasticPullToRefresh'
 # 检查应用当前的网络连接状况
     pod 'ReachabilitySwift'
 # 布局框架
@@ -19,8 +19,6 @@ def all_Pods
 #   pod 'Spring'
 # 主要应用于UIView.animateWithDuration(_:, animations:...)
     pod 'EasyAnimation'
-# 主要使用于Interface Builder
-#    pod 'IBAnimatable'
 # 使用3D touch 被引用的两个动画特性peek、pop
 #    pod 'PeekPop'
 # 转场动画
@@ -40,7 +38,7 @@ def all_Pods
 # 卡片视图，而且滑动视图有滑动卡片一样的动画效果
 #   pod 'Koloda'
 # 图片选择器
-    pod 'ImagePicker'
+#    pod 'ImagePicker'
 # 关于Material design做的一系列UI组件
 #   pod 'MaterialKit'
 # 集Animation和UI与一身，还有Icon、Color等元素
@@ -49,8 +47,6 @@ def all_Pods
 #   pod 'RazzleDazzle'
 # 应用于操作指南、新手教程
     pod 'Instructions'
-# 给tabbar items各单元添加动画效果
-    pod 'RAMAnimatedTabBarController'
 # 折叠的cell效果，动画很nice
 #   pod 'FoldingCell', '~> 5.0.2'
 # Alert
@@ -96,6 +92,7 @@ def all_Pods
     pod 'SVGKit'
 #    pod 'Reachability'
 #    pod 'LDNetDiagnoService'
+    pod 'Result', '5.0.0'
 end
 
 target 'VoiceTalk' do

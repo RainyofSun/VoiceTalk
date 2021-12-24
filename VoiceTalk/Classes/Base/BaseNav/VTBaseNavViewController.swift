@@ -10,6 +10,28 @@ import UIKit
 
 class VTBaseNavViewController: UINavigationController {
 
+    override init(rootViewController: UIViewController) {
+        super.init(rootViewController: rootViewController)
+        if above_ios_13 {
+            self.modalPresentationStyle = .fullScreen
+        }
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        if above_ios_13 {
+            self.modalPresentationStyle = .fullScreen
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        if above_ios_13 {
+            self.modalPresentationStyle = .fullScreen
+        }
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
