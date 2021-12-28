@@ -27,6 +27,7 @@ class VTMainViewController: UIViewController {
         loadTabbarController();
         self.mainVM.loginExpirOrNot();
         addUserGuideView();
+        self.view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
 //        let lab = UILabel.init();
 //        lab.text = LanguageTool.language(key: "我知道了");
@@ -38,7 +39,8 @@ class VTMainViewController: UIViewController {
         
 //        testStr()
 //        testDict()
-        commonInit()
+//        commonInit()
+        testRedPoint()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -151,6 +153,15 @@ extension VTMainViewController {
     
     func testRoute() {
 //        VTOpenURLManager.shared.openURL(url: NSURL.init(string: "nice://phoneLogin")!, callback: nil)
-        VTOpenURLManager.shared.openURL(url: NSURL.init(string: "nice://phoneLogin")!, openStyle: .VTOpenPageStylePresent, parameters: nil, callback: nil)
+        VTOpenURLManager.shared.openURL(url: NSURL.init(string: "nice://phoneLogin")!, openStyle: .VTOpenPageStylePush, parameters: nil, callback: nil)
+    }
+    
+    func testRedPoint() {
+        let redPoint = VTRedPointLabel.init(position: CGPoint.init(x: 100, y: 100))
+        redPoint.text = "1"
+        self.view.addSubview(redPoint)
+        vt_dispatch_after_block(time: .now() + 2) {
+            redPoint.text = "0"
+        }
     }
 }

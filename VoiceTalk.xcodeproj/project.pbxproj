@@ -57,10 +57,6 @@
 		221CF1BC26462C4C00593DF4 /* FontFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221CF1BA26462C4C00593DF4 /* FontFile.swift */; };
 		221CF1BD26462C4C00593DF4 /* MinSpaceFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221CF1BB26462C4C00593DF4 /* MinSpaceFile.swift */; };
 		221CF1C126462C7300593DF4 /* VTImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221CF1C026462C7300593DF4 /* VTImageViewController.swift */; };
-		221CF1C826462CDD00593DF4 /* HS Alhandsi W23 Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1C426462CDD00593DF4 /* HS Alhandsi W23 Regular.ttf */; };
-		221CF1C926462CDD00593DF4 /* YSHaoShenTi-2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1C526462CDD00593DF4 /* YSHaoShenTi-2.ttf */; };
-		221CF1CA26462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1C626462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf */; };
-		221CF1CB26462CDD00593DF4 /* Futura-Medium-6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1C726462CDD00593DF4 /* Futura-Medium-6.ttf */; };
 		221CF1CE26462D9700593DF4 /* ImageRes.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221CF1CD26462D9700593DF4 /* ImageRes.xcassets */; };
 		221D0A5D2632706C009F53DA /* VTBaseNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0A5C2632706C009F53DA /* VTBaseNavViewController.swift */; };
 		221D0BC02632A8CF009F53DA /* ColorFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D0BBF2632A8CF009F53DA /* ColorFile.swift */; };
@@ -94,12 +90,16 @@
 		C820C08C2763416D00625CA9 /* VTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C08B2763416D00625CA9 /* VTRequest.swift */; };
 		C820C094276350C900625CA9 /* VTString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C093276350C900625CA9 /* VTString.swift */; };
 		C85EACE0276B57A5001A9F9C /* OpenURLPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85EACDF276B57A4001A9F9C /* OpenURLPlist.plist */; };
+		C86B9ACC27784D0300D072E2 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B9ACB27784D0300D072E2 /* UIImageExtension.swift */; };
 		C87ED5DE2771571A00C68193 /* VTOpenPageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5DD2771571A00C68193 /* VTOpenPageContext.swift */; };
 		C87ED5E42772CE9300C68193 /* VTPhoneLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5E32772CE9300C68193 /* VTPhoneLoginViewController.swift */; };
 		C87ED5E72773308D00C68193 /* VTObjectMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5E62773308B00C68193 /* VTObjectMethod.swift */; };
 		C87ED5EC2774511100C68193 /* VTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5EB2774511100C68193 /* VTTabBar.swift */; };
 		C87ED5EF27748C0600C68193 /* VTTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5EE27748C0500C68193 /* VTTabBarItem.swift */; };
 		C87ED5F227748D9C00C68193 /* VTRedPointLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5F127748D9B00C68193 /* VTRedPointLabel.swift */; };
+		C87ED5F42775617800C68193 /* VTStringSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5F32775617700C68193 /* VTStringSize.swift */; };
+		C87ED5F727756C5400C68193 /* VTViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5F627756C5400C68193 /* VTViewExtension.swift */; };
+		C87ED5F927757B6500C68193 /* VTObjectThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87ED5F827757B6500C68193 /* VTObjectThread.swift */; };
 		C87F7CB427672134009407AE /* VTNetHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CB327672134009407AE /* VTNetHeader.swift */; };
 		C87F7CB727672E76009407AE /* VTOpenURLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CB627672E76009407AE /* VTOpenURLError.swift */; };
 		C87F7CBB27673171009407AE /* VTOpenURLContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CBA27673171009407AE /* VTOpenURLContext.swift */; };
@@ -168,10 +168,6 @@
 		221CF1BA26462C4C00593DF4 /* FontFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontFile.swift; sourceTree = "<group>"; };
 		221CF1BB26462C4C00593DF4 /* MinSpaceFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinSpaceFile.swift; sourceTree = "<group>"; };
 		221CF1C026462C7300593DF4 /* VTImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VTImageViewController.swift; sourceTree = "<group>"; };
-		221CF1C426462CDD00593DF4 /* HS Alhandsi W23 Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HS Alhandsi W23 Regular.ttf"; sourceTree = "<group>"; };
-		221CF1C526462CDD00593DF4 /* YSHaoShenTi-2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "YSHaoShenTi-2.ttf"; sourceTree = "<group>"; };
-		221CF1C626462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ResourceHanRoundedCN-Medium.ttf"; sourceTree = "<group>"; };
-		221CF1C726462CDD00593DF4 /* Futura-Medium-6.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-Medium-6.ttf"; sourceTree = "<group>"; };
 		221CF1CD26462D9700593DF4 /* ImageRes.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageRes.xcassets; sourceTree = "<group>"; };
 		221CF1D026462FA900593DF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		221D0A5C2632706C009F53DA /* VTBaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBaseNavViewController.swift; sourceTree = "<group>"; };
@@ -208,12 +204,16 @@
 		C820C08B2763416D00625CA9 /* VTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTRequest.swift; sourceTree = "<group>"; };
 		C820C093276350C900625CA9 /* VTString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTString.swift; sourceTree = "<group>"; };
 		C85EACDF276B57A4001A9F9C /* OpenURLPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OpenURLPlist.plist; sourceTree = "<group>"; };
+		C86B9ACB27784D0300D072E2 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		C87ED5DD2771571A00C68193 /* VTOpenPageContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenPageContext.swift; sourceTree = "<group>"; };
 		C87ED5E32772CE9300C68193 /* VTPhoneLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPhoneLoginViewController.swift; sourceTree = "<group>"; };
 		C87ED5E62773308B00C68193 /* VTObjectMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTObjectMethod.swift; sourceTree = "<group>"; };
 		C87ED5EB2774511100C68193 /* VTTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabBar.swift; sourceTree = "<group>"; };
 		C87ED5EE27748C0500C68193 /* VTTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTabBarItem.swift; sourceTree = "<group>"; };
 		C87ED5F127748D9B00C68193 /* VTRedPointLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTRedPointLabel.swift; sourceTree = "<group>"; };
+		C87ED5F32775617700C68193 /* VTStringSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTStringSize.swift; sourceTree = "<group>"; };
+		C87ED5F627756C5400C68193 /* VTViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTViewExtension.swift; sourceTree = "<group>"; };
+		C87ED5F827757B6500C68193 /* VTObjectThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTObjectThread.swift; sourceTree = "<group>"; };
 		C87F7CB327672134009407AE /* VTNetHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetHeader.swift; sourceTree = "<group>"; };
 		C87F7CB627672E76009407AE /* VTOpenURLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLError.swift; sourceTree = "<group>"; };
 		C87F7CBA27673171009407AE /* VTOpenURLContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLContext.swift; sourceTree = "<group>"; };
@@ -458,6 +458,8 @@
 		221CF1B026462B7200593DF4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C86B9ACA27784CEB00D072E2 /* UIImage */,
+				C87ED5F527756C3500C68193 /* View */,
 				C87ED5E52773303400C68193 /* Object */,
 				C8E1D7D6276AE28E005C9E6D /* Dictionary */,
 				C8E1D7D3276AD890005C9E6D /* Array */,
@@ -476,17 +478,6 @@
 				222F7A46264A66E5004FB29A /* VTVersionViewController.swift */,
 			);
 			path = Alert;
-			sourceTree = "<group>";
-		};
-		221CF1C326462CDC00593DF4 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				221CF1C426462CDD00593DF4 /* HS Alhandsi W23 Regular.ttf */,
-				221CF1C526462CDD00593DF4 /* YSHaoShenTi-2.ttf */,
-				221CF1C626462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf */,
-				221CF1C726462CDD00593DF4 /* Futura-Medium-6.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		221D0A5B2632703D009F53DA /* BaseNav */ = {
@@ -568,7 +559,6 @@
 			isa = PBXGroup;
 			children = (
 				221CF1CD26462D9700593DF4 /* ImageRes.xcassets */,
-				221CF1C326462CDC00593DF4 /* Fonts */,
 				22079C302623E62A0039C406 /* Assets.xcassets */,
 				22142C7E26292F9A00C3499C /* GuideRes.xcassets */,
 				22192DFF262D92800018E7B7 /* SVGResBundle.bundle */,
@@ -747,6 +737,14 @@
 			path = OpenURLPlist;
 			sourceTree = "<group>";
 		};
+		C86B9ACA27784CEB00D072E2 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				C86B9ACB27784D0300D072E2 /* UIImageExtension.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		C8704F502760C9520096E58B /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,6 +789,7 @@
 			isa = PBXGroup;
 			children = (
 				C87ED5E62773308B00C68193 /* VTObjectMethod.swift */,
+				C87ED5F827757B6500C68193 /* VTObjectThread.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -801,6 +800,14 @@
 				C87ED5F127748D9B00C68193 /* VTRedPointLabel.swift */,
 			);
 			path = Widget;
+			sourceTree = "<group>";
+		};
+		C87ED5F527756C3500C68193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C87ED5F627756C5400C68193 /* VTViewExtension.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C87F7CB227672118009407AE /* Header */ = {
@@ -862,6 +869,7 @@
 			children = (
 				C820C093276350C900625CA9 /* VTString.swift */,
 				C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */,
+				C87ED5F32775617700C68193 /* VTStringSize.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -949,14 +957,10 @@
 				222F7A1526491111004FB29A /* Localizable.strings in Resources */,
 				22192E00262D92800018E7B7 /* SVGResBundle.bundle in Resources */,
 				22079C342623E62A0039C406 /* LaunchScreen.storyboard in Resources */,
-				221CF1C926462CDD00593DF4 /* YSHaoShenTi-2.ttf in Resources */,
 				22142C7B262876A700C3499C /* README.md in Resources */,
-				221CF1CB26462CDD00593DF4 /* Futura-Medium-6.ttf in Resources */,
 				22079C312623E62A0039C406 /* Assets.xcassets in Resources */,
-				221CF1C826462CDD00593DF4 /* HS Alhandsi W23 Regular.ttf in Resources */,
 				221CF1CE26462D9700593DF4 /* ImageRes.xcassets in Resources */,
 				22142C7F26292F9A00C3499C /* GuideRes.xcassets in Resources */,
-				221CF1CA26462CDD00593DF4 /* ResourceHanRoundedCN-Medium.ttf in Resources */,
 				C85EACE0276B57A5001A9F9C /* OpenURLPlist.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1024,6 +1028,7 @@
 				221CF1B526462B7300593DF4 /* TopController.swift in Sources */,
 				221CF1B326462B7300593DF4 /* UIImage+SVGManager.m in Sources */,
 				22142C7D26292DE800C3499C /* AppGuideAnimationViewController.swift in Sources */,
+				C87ED5F42775617800C68193 /* VTStringSize.swift in Sources */,
 				C820C0762761EA9800625CA9 /* VTServer.swift in Sources */,
 				22142C7A262876A700C3499C /* CornerRadiusAnimation.swift in Sources */,
 				221CF1B426462B7300593DF4 /* Date.swift in Sources */,
@@ -1042,6 +1047,7 @@
 				22142C69262876A700C3499C /* ScrollViewPageConstraintAnimation.swift in Sources */,
 				C87F7CC327673A30009407AE /* VTOpenURLManager.swift in Sources */,
 				C87ED5E72773308D00C68193 /* VTObjectMethod.swift in Sources */,
+				C87ED5F927757B6500C68193 /* VTObjectThread.swift in Sources */,
 				221CF1BD26462C4C00593DF4 /* MinSpaceFile.swift in Sources */,
 				22142C71262876A700C3499C /* LayerStrokeColorAnimation.swift in Sources */,
 				C87F7CC027673370009407AE /* VTOpenURLComponents.swift in Sources */,
@@ -1065,6 +1071,7 @@
 				22142C6A262876A700C3499C /* Animation.swift in Sources */,
 				22142C63262876A700C3499C /* EasingFunction.swift in Sources */,
 				221D0C3F26354355009F53DA /* VTUserInfoCache.swift in Sources */,
+				C87ED5F727756C5400C68193 /* VTViewExtension.swift in Sources */,
 				C87ED5F227748D9C00C68193 /* VTRedPointLabel.swift in Sources */,
 				C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */,
 				221D0BEB263514CE009F53DA /* UserDefaultsKeyFile.swift in Sources */,
@@ -1078,6 +1085,7 @@
 				C820C08C2763416D00625CA9 /* VTRequest.swift in Sources */,
 				22142C85262961F000C3499C /* ServiceInterviceFile.swift in Sources */,
 				C87ED5EC2774511100C68193 /* VTTabBar.swift in Sources */,
+				C86B9ACC27784D0300D072E2 /* UIImageExtension.swift in Sources */,
 				221CF1BC26462C4C00593DF4 /* FontFile.swift in Sources */,
 				C820C0732761E6C300625CA9 /* VTServerType.swift in Sources */,
 				22142C832629317900C3499C /* MacroFile.swift in Sources */,

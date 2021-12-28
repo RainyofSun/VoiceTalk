@@ -14,6 +14,7 @@ class VTChatPageViewController: VTBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = VTRedColor
     }
     
 

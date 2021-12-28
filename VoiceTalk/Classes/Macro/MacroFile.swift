@@ -34,6 +34,10 @@ let screen_height = UIScreen.main.bounds.size.height;
 // window
 let KeyWindow = UIApplication.shared.delegate?.window;
 
+// 多语言
+func VTStr(str: String) ->String {
+    return str
+}
 
 // 设备判断
 

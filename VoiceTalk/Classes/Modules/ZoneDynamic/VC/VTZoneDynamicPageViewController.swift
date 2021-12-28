@@ -14,6 +14,7 @@ class VTZoneDynamicPageViewController: VTBaseViewController {
         super.viewDidLoad()
         // kksksk
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = VTGrayColor
     }
     
 

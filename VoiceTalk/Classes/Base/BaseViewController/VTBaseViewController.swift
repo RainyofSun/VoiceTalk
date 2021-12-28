@@ -37,6 +37,11 @@ class VTBaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.view.vt_height = self.view.vt_height + 15
+    }
+    
     deinit {
         printLog("DELLOC : ",self.description)
     }

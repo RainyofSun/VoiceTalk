@@ -51,9 +51,9 @@ func appFont(fontSize:CGFloat, weight:UIFont.Weight? = .regular) -> UIFont {
     
     if lanuage.first == "zh-Hans-CN" || lanuage.first == "zh-Hant-CN" || lanuage.first == "zh-HK" {
         // 简体中文/繁体中文
-        return UIFont.init(name: "Resource-Han-Rounded-CN-Medium", size: fontSize)!;
+        return UIFont.systemFont(ofSize: fontSize, weight: weight!);
     } else if lanuage.first == "en_CN" {
-        return UIFont.init(name: "Futura-Medium", size: fontSize)!;
+        return UIFont.systemFont(ofSize: fontSize, weight: weight!);
     }
     return UIFont.systemFont(ofSize: fontSize, weight: weight!);
 }
@@ -64,9 +64,9 @@ func appBoldFont(fontSize:CGFloat) -> UIFont {
     
     if lanuage.first == "zh-Hans-CN" || lanuage.first == "zh-Hant-CN" || lanuage.first == "zh-HK" {
         // 简体中文/繁体中文
-        return UIFont.init(name: "Resource-Han-Rounded-CN-Medium", size: fontSize)!;
+        return UIFont.systemFont(ofSize: fontSize);
     } else if lanuage.first == "en_CN" {
-        return UIFont.init(name: "Futura-Medium", size: fontSize)!;
+        return UIFont.systemFont(ofSize: fontSize);
     }
     return UIFont.systemFont(ofSize: fontSize);
 }
