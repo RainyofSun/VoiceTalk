@@ -25,6 +25,7 @@ class VTBaseNavViewController: UINavigationController, UINavigationControllerDel
             }
         }
     }
+    
     private var navigationAnimating: Bool = false
     private lazy var statusBarBackground: UIView = buildStatusBackgroundView()
     private var blockedViewController: UIViewController?
