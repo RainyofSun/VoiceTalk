@@ -93,6 +93,8 @@ def all_Pods
 #    pod 'Reachability'
 #    pod 'LDNetDiagnoService'
     pod 'Result', '5.0.0'
+# 富文本 https://github.com/lixiang1994/AttributedString
+    pod 'AttributedString'
 end
 
 target 'VoiceTalk' do

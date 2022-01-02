@@ -11,6 +11,8 @@ import UIKit
 class VTBaseViewController: UIViewController {
 
     public weak var openURLContext: VTOpenURLContext?
+    public var addBackGesture: Bool? = false
+    
     fileprivate(set) var openURLParameters: Dictionary<String,Any>?
     
     // MARK - Public methods

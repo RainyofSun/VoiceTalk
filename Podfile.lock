@@ -3,6 +3,7 @@ PODS:
   - Alamofire (5.4.4)
   - Appz (3.2.0)
   - Async (0.2.0)
+  - AttributedString (2.2.1)
   - Chatto (4.0.0)
   - CocoaLumberjack (3.7.0):
     - CocoaLumberjack/Core (= 3.7.0)
@@ -50,6 +51,7 @@ DEPENDENCIES:
   - Alamofire (= 5.4.4)
   - Appz
   - Async
+  - AttributedString
   - Chatto
   - EasyAnimation
   - HandyJSON
@@ -78,6 +80,7 @@ SPEC REPOS:
     - Alamofire
     - Appz
     - Async
+    - AttributedString
     - Chatto
     - CocoaLumberjack
     - EasyAnimation
@@ -107,6 +110,7 @@ SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   Appz: 9afca8060886b75002092f4b5b5c238a0ab19bf0
   Async: d80205f1a1b4eea24de8ddc62cf5197ff3025330
+  AttributedString: 5d92c133226b792566a4b4e2a5bdc0c9e12ee2b5
   Chatto: 970c3546b01acdca60a7ba6de13cc73f62341fa7
   CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
   EasyAnimation: 226d133d23ef0ef99ddfb8928ff2a9a4a77d1cfd
@@ -131,6 +135,6 @@ SPEC CHECKSUMS:
   TextAttributes: 89905fb52c36de587010f335bd4071463d9c6d9b
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: d05383d0d7e9aa95c14a73ec4b59681140a7db07
+PODFILE CHECKSUM: 8d2b4f8010529cc6e61f24a62dcfe861c9eca296
 
 COCOAPODS: 1.11.2

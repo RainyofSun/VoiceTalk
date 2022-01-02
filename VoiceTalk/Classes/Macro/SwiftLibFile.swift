@@ -15,3 +15,4 @@ import Foundation
 @_exported import SnapKit
 @_exported import SwiftyUserDefaults
 @_exported import Moya
+@_exported import AttributedString
