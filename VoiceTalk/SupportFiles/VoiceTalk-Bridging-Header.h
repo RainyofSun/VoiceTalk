@@ -7,3 +7,4 @@
 
 /// 分类文件
 #import "UIImage+SVGManager.h"
+#import "VTThreadSafeMutableDictionary.h"

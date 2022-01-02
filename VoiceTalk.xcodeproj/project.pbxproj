@@ -116,6 +116,7 @@
 		C89DB80B27806C33002FEBD2 /* VTPopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */; };
 		C89DB80D27806C87002FEBD2 /* VTPushAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80C27806C87002FEBD2 /* VTPushAnimation.swift */; };
 		C89DB80F2781546B002FEBD2 /* VTViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80E2781546A002FEBD2 /* VTViewImage.swift */; };
+		C89DB8172781C250002FEBD2 /* VTThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C89DB8162781C250002FEBD2 /* VTThreadSafeMutableDictionary.m */; };
 		C8D4ADC5276874DD007291EF /* VTStringURLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */; };
 		C8E1D7D5276AD8A1005C9E6D /* VTArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */; };
 		C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */; };
@@ -240,6 +241,8 @@
 		C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPopAnimation.swift; sourceTree = "<group>"; };
 		C89DB80C27806C87002FEBD2 /* VTPushAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPushAnimation.swift; sourceTree = "<group>"; };
 		C89DB80E2781546A002FEBD2 /* VTViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTViewImage.swift; sourceTree = "<group>"; };
+		C89DB8152781C250002FEBD2 /* VTThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
+		C89DB8162781C250002FEBD2 /* VTThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTStringURLEncode.swift; sourceTree = "<group>"; };
 		C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTArray.swift; sourceTree = "<group>"; };
 		C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTDictionary.swift; sourceTree = "<group>"; };
@@ -469,8 +472,7 @@
 		221CF1AD26462B6700593DF4 /* OC */ = {
 			isa = PBXGroup;
 			children = (
-				221CF1AE26462B6700593DF4 /* UIImage+SVGManager.m */,
-				221CF1AF26462B6700593DF4 /* UIImage+SVGManager.h */,
+				C89DB8132781C21E002FEBD2 /* UIImage */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -622,10 +624,8 @@
 		227DD49826272484006C8377 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				C8715E21277DCE26008FF43B /* TransitionAnimation */,
-				221CF1BF26462C7300593DF4 /* Alert */,
-				221D0C3D2635433C009F53DA /* Cache */,
-				221D0C0E263520AD009F53DA /* Hud */,
+				C89DB8192781C2C0002FEBD2 /* Swift */,
+				C89DB8182781C2B6002FEBD2 /* OC */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -902,6 +902,43 @@
 			path = OpenURLManager;
 			sourceTree = "<group>";
 		};
+		C89DB8132781C21E002FEBD2 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				221CF1AE26462B6700593DF4 /* UIImage+SVGManager.m */,
+				221CF1AF26462B6700593DF4 /* UIImage+SVGManager.h */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		C89DB8142781C22A002FEBD2 /* SafeDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				C89DB8152781C250002FEBD2 /* VTThreadSafeMutableDictionary.h */,
+				C89DB8162781C250002FEBD2 /* VTThreadSafeMutableDictionary.m */,
+			);
+			path = SafeDictionary;
+			sourceTree = "<group>";
+		};
+		C89DB8182781C2B6002FEBD2 /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				C89DB8142781C22A002FEBD2 /* SafeDictionary */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
+		C89DB8192781C2C0002FEBD2 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C8715E21277DCE26008FF43B /* TransitionAnimation */,
+				221CF1BF26462C7300593DF4 /* Alert */,
+				221D0C3D2635433C009F53DA /* Cache */,
+				221D0C0E263520AD009F53DA /* Hud */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		C8D4ADD22769C1CC007291EF /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -1090,6 +1127,7 @@
 				C87F7CC327673A30009407AE /* VTOpenURLManager.swift in Sources */,
 				C87ED5E72773308D00C68193 /* VTObjectMethod.swift in Sources */,
 				C87ED5F927757B6500C68193 /* VTObjectThread.swift in Sources */,
+				C89DB8172781C250002FEBD2 /* VTThreadSafeMutableDictionary.m in Sources */,
 				221CF1BD26462C4C00593DF4 /* MinSpaceFile.swift in Sources */,
 				22142C71262876A700C3499C /* LayerStrokeColorAnimation.swift in Sources */,
 				C87F7CC027673370009407AE /* VTOpenURLComponents.swift in Sources */,
