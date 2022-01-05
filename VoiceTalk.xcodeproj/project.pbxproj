@@ -91,6 +91,11 @@
 		C820C094276350C900625CA9 /* VTString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C820C093276350C900625CA9 /* VTString.swift */; };
 		C85EACE0276B57A5001A9F9C /* OpenURLPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85EACDF276B57A4001A9F9C /* OpenURLPlist.plist */; };
 		C86B9ACC27784D0300D072E2 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86B9ACB27784D0300D072E2 /* UIImageExtension.swift */; };
+		C86E917E2784313300F423E3 /* VTNODataLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E917D2784313300F423E3 /* VTNODataLabel.swift */; };
+		C86E91802784336500F423E3 /* VTNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E917F2784336500F423E3 /* VTNotificationName.swift */; };
+		C86E91822784376D00F423E3 /* VTBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E91812784376D00F423E3 /* VTBarButtonItem.swift */; };
+		C86E918427843B3C00F423E3 /* VTCustomClickSizeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E918327843B3C00F423E3 /* VTCustomClickSizeButton.swift */; };
+		C86E91872784446700F423E3 /* VTControlClickedListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86E91862784446700F423E3 /* VTControlClickedListener.swift */; };
 		C8715E0D277B1DD9008FF43B /* VTPopGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8715E0C277B1DD9008FF43B /* VTPopGestureRecognizerDelegate.swift */; };
 		C8715E0F277B220B008FF43B /* VTNavigationItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8715E0E277B220B008FF43B /* VTNavigationItemExtension.swift */; };
 		C8715E17277C3FE5008FF43B /* VTAssociateProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8715E16277C3FE5008FF43B /* VTAssociateProperty.swift */; };
@@ -117,9 +122,16 @@
 		C89DB80D27806C87002FEBD2 /* VTPushAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80C27806C87002FEBD2 /* VTPushAnimation.swift */; };
 		C89DB80F2781546B002FEBD2 /* VTViewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80E2781546A002FEBD2 /* VTViewImage.swift */; };
 		C89DB8172781C250002FEBD2 /* VTThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C89DB8162781C250002FEBD2 /* VTThreadSafeMutableDictionary.m */; };
+		C89DB81E2781C412002FEBD2 /* VTWKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB81D2781C412002FEBD2 /* VTWKWebView.swift */; };
+		C89DB8202781C55E002FEBD2 /* VTWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB81F2781C55E002FEBD2 /* VTWKWebViewController.swift */; };
+		C89DB8222781C589002FEBD2 /* VTJSBridgeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB8212781C589002FEBD2 /* VTJSBridgeAction.swift */; };
+		C89DB8242782AD56002FEBD2 /* JS_GetSelected.js in Resources */ = {isa = PBXBuildFile; fileRef = C89DB8232782AD56002FEBD2 /* JS_GetSelected.js */; };
 		C8D4ADC5276874DD007291EF /* VTStringURLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */; };
 		C8E1D7D5276AD8A1005C9E6D /* VTArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */; };
 		C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */; };
+		C8EC388D27858427002A2E17 /* VTTopWarningControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC388C27858427002A2E17 /* VTTopWarningControl.swift */; };
+		C8EC388F278594AD002A2E17 /* VTTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC388E278594AD002A2E17 /* VTTopViewController.swift */; };
+		C8EC38912785A5F8002A2E17 /* VTNavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EC38902785A5F8002A2E17 /* VTNavigationTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +228,11 @@
 		C820C093276350C900625CA9 /* VTString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTString.swift; sourceTree = "<group>"; };
 		C85EACDF276B57A4001A9F9C /* OpenURLPlist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OpenURLPlist.plist; sourceTree = "<group>"; };
 		C86B9ACB27784D0300D072E2 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		C86E917D2784313300F423E3 /* VTNODataLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNODataLabel.swift; sourceTree = "<group>"; };
+		C86E917F2784336500F423E3 /* VTNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNotificationName.swift; sourceTree = "<group>"; };
+		C86E91812784376D00F423E3 /* VTBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTBarButtonItem.swift; sourceTree = "<group>"; };
+		C86E918327843B3C00F423E3 /* VTCustomClickSizeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTCustomClickSizeButton.swift; sourceTree = "<group>"; };
+		C86E91862784446700F423E3 /* VTControlClickedListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTControlClickedListener.swift; sourceTree = "<group>"; };
 		C8715E0C277B1DD9008FF43B /* VTPopGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPopGestureRecognizerDelegate.swift; sourceTree = "<group>"; };
 		C8715E0E277B220B008FF43B /* VTNavigationItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNavigationItemExtension.swift; sourceTree = "<group>"; };
 		C8715E16277C3FE5008FF43B /* VTAssociateProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAssociateProperty.swift; sourceTree = "<group>"; };
@@ -243,9 +260,16 @@
 		C89DB80E2781546A002FEBD2 /* VTViewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTViewImage.swift; sourceTree = "<group>"; };
 		C89DB8152781C250002FEBD2 /* VTThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
 		C89DB8162781C250002FEBD2 /* VTThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
+		C89DB81D2781C412002FEBD2 /* VTWKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWKWebView.swift; sourceTree = "<group>"; };
+		C89DB81F2781C55E002FEBD2 /* VTWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWKWebViewController.swift; sourceTree = "<group>"; };
+		C89DB8212781C589002FEBD2 /* VTJSBridgeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTJSBridgeAction.swift; sourceTree = "<group>"; };
+		C89DB8232782AD56002FEBD2 /* JS_GetSelected.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JS_GetSelected.js; sourceTree = "<group>"; };
 		C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTStringURLEncode.swift; sourceTree = "<group>"; };
 		C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTArray.swift; sourceTree = "<group>"; };
 		C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTDictionary.swift; sourceTree = "<group>"; };
+		C8EC388C27858427002A2E17 /* VTTopWarningControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTopWarningControl.swift; sourceTree = "<group>"; };
+		C8EC388E278594AD002A2E17 /* VTTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTTopViewController.swift; sourceTree = "<group>"; };
+		C8EC38902785A5F8002A2E17 /* VTNavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNavigationTitleView.swift; sourceTree = "<group>"; };
 		FE0FBD641A917A87465F7D4E /* Pods-VoiceTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceTalk.debug.xcconfig"; path = "Target Support Files/Pods-VoiceTalk/Pods-VoiceTalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -348,6 +372,7 @@
 				221D0BC22632AEF4009F53DA /* BundlePathFile.swift */,
 				221D0BEA263514CE009F53DA /* UserDefaultsKeyFile.swift */,
 				222F7A30264940D3004FB29A /* DeviceInfoFile.swift */,
+				C86E917F2784336500F423E3 /* VTNotificationName.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -480,6 +505,7 @@
 		221CF1B026462B7200593DF4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C86E91852784442200F423E3 /* UIControl */,
 				C86B9ACA27784CEB00D072E2 /* UIImage */,
 				C87ED5F527756C3500C68193 /* View */,
 				C87ED5E52773303400C68193 /* Object */,
@@ -633,6 +659,7 @@
 		227DD4992627248B006C8377 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C89DB81A2781C38D002FEBD2 /* WKWeb */,
 				C87F7CB527672D60009407AE /* OpenURL */,
 				C820C0702761E5AD00625CA9 /* Net */,
 				221D0C3926352201009F53DA /* SwiftProgressHUD */,
@@ -770,6 +797,14 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		C86E91852784442200F423E3 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				C86E91862784446700F423E3 /* VTControlClickedListener.swift */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
 		C8704F502760C9520096E58B /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -835,6 +870,11 @@
 			isa = PBXGroup;
 			children = (
 				C87ED5F127748D9B00C68193 /* VTRedPointLabel.swift */,
+				C86E917D2784313300F423E3 /* VTNODataLabel.swift */,
+				C86E91812784376D00F423E3 /* VTBarButtonItem.swift */,
+				C86E918327843B3C00F423E3 /* VTCustomClickSizeButton.swift */,
+				C8EC388C27858427002A2E17 /* VTTopWarningControl.swift */,
+				C8EC38902785A5F8002A2E17 /* VTNavigationTitleView.swift */,
 			);
 			path = Widget;
 			sourceTree = "<group>";
@@ -844,6 +884,7 @@
 			children = (
 				C87ED5F627756C5400C68193 /* VTViewExtension.swift */,
 				C89DB80E2781546A002FEBD2 /* VTViewImage.swift */,
+				C8EC388E278594AD002A2E17 /* VTTopViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -939,6 +980,17 @@
 			path = Swift;
 			sourceTree = "<group>";
 		};
+		C89DB81A2781C38D002FEBD2 /* WKWeb */ = {
+			isa = PBXGroup;
+			children = (
+				C89DB81D2781C412002FEBD2 /* VTWKWebView.swift */,
+				C89DB81F2781C55E002FEBD2 /* VTWKWebViewController.swift */,
+				C89DB8212781C589002FEBD2 /* VTJSBridgeAction.swift */,
+				C89DB8232782AD56002FEBD2 /* JS_GetSelected.js */,
+			);
+			path = WKWeb;
+			sourceTree = "<group>";
+		};
 		C8D4ADD22769C1CC007291EF /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -1029,6 +1081,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22142C61262876A700C3499C /* LICENSE in Resources */,
+				C89DB8242782AD56002FEBD2 /* JS_GetSelected.js in Resources */,
 				222F7A1526491111004FB29A /* Localizable.strings in Resources */,
 				22192E00262D92800018E7B7 /* SVGResBundle.bundle in Resources */,
 				22079C342623E62A0039C406 /* LaunchScreen.storyboard in Resources */,
@@ -1090,6 +1143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8715E17277C3FE5008FF43B /* VTAssociateProperty.swift in Sources */,
+				C86E91872784446700F423E3 /* VTControlClickedListener.swift in Sources */,
 				221CF1B826462C1D00593DF4 /* VTBaseAlertViewController.swift in Sources */,
 				C87ED5DE2771571A00C68193 /* VTOpenPageContext.swift in Sources */,
 				22142C62262876A700C3499C /* PathPositionAnimation.swift in Sources */,
@@ -1114,14 +1168,18 @@
 				222F7A31264940D3004FB29A /* DeviceInfoFile.swift in Sources */,
 				221D0C3B2635221E009F53DA /* SwiftProgressHUD.swift in Sources */,
 				C820C0792761FDF200625CA9 /* VTNetWorkStatusManager.swift in Sources */,
+				C86E91802784336500F423E3 /* VTNotificationName.swift in Sources */,
 				22142C6D262876A700C3499C /* UIView+Transform.swift in Sources */,
 				C8D4ADC5276874DD007291EF /* VTStringURLEncode.swift in Sources */,
 				22192DED262D8C8F0018E7B7 /* VTHomePageViewController.swift in Sources */,
 				C8715E0D277B1DD9008FF43B /* VTPopGestureRecognizerDelegate.swift in Sources */,
+				C86E91822784376D00F423E3 /* VTBarButtonItem.swift in Sources */,
 				C87F7CBB27673171009407AE /* VTOpenURLContext.swift in Sources */,
 				221CF1C126462C7300593DF4 /* VTImageViewController.swift in Sources */,
 				22142C68262876A700C3499C /* BackgroundColorAnimation.swift in Sources */,
 				221D0A5D2632706C009F53DA /* VTBaseNavViewController.swift in Sources */,
+				C89DB8222781C589002FEBD2 /* VTJSBridgeAction.swift in Sources */,
+				C8EC38912785A5F8002A2E17 /* VTNavigationTitleView.swift in Sources */,
 				22142C73262876A700C3499C /* Animatable.swift in Sources */,
 				22142C69262876A700C3499C /* ScrollViewPageConstraintAnimation.swift in Sources */,
 				C87F7CC327673A30009407AE /* VTOpenURLManager.swift in Sources */,
@@ -1146,18 +1204,23 @@
 				22142C64262876A700C3499C /* CubicBezier.swift in Sources */,
 				C8715E23277DCE8B008FF43B /* VTPercentDrivenInteractiveTransition.swift in Sources */,
 				222F7A34264A1EA8004FB29A /* MapExtension.swift in Sources */,
+				C89DB81E2781C412002FEBD2 /* VTWKWebView.swift in Sources */,
 				C87F7CB727672E76009407AE /* VTOpenURLError.swift in Sources */,
 				C89DB80B27806C33002FEBD2 /* VTPopAnimation.swift in Sources */,
 				227DD4A42627E402006C8377 /* VTMainViewController.swift in Sources */,
+				C86E918427843B3C00F423E3 /* VTCustomClickSizeButton.swift in Sources */,
 				22192DF3262D8CC20018E7B7 /* VTChatPageViewController.swift in Sources */,
 				22142C6A262876A700C3499C /* Animation.swift in Sources */,
 				22142C63262876A700C3499C /* EasingFunction.swift in Sources */,
 				221D0C3F26354355009F53DA /* VTUserInfoCache.swift in Sources */,
 				C87ED5F727756C5400C68193 /* VTViewExtension.swift in Sources */,
 				C87ED5F227748D9C00C68193 /* VTRedPointLabel.swift in Sources */,
+				C8EC388D27858427002A2E17 /* VTTopWarningControl.swift in Sources */,
 				C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */,
+				C8EC388F278594AD002A2E17 /* VTTopViewController.swift in Sources */,
 				221D0BEB263514CE009F53DA /* UserDefaultsKeyFile.swift in Sources */,
 				22142C78262876A700C3499C /* Filmstrip.swift in Sources */,
+				C86E917E2784313300F423E3 /* VTNODataLabel.swift in Sources */,
 				22142C76262876A700C3499C /* LabelTextColorAnimation.swift in Sources */,
 				22142C6B262876A700C3499C /* LayerStrokeStartAnimation.swift in Sources */,
 				22142C6C262876A700C3499C /* LayerFillColorAnimation.swift in Sources */,
@@ -1181,6 +1244,7 @@
 				221D0BC02632A8CF009F53DA /* ColorFile.swift in Sources */,
 				22142C65262876A700C3499C /* RotationAnimation.swift in Sources */,
 				221D0BC32632AEF4009F53DA /* BundlePathFile.swift in Sources */,
+				C89DB8202781C55E002FEBD2 /* VTWKWebViewController.swift in Sources */,
 				22142C67262876A700C3499C /* AnimatedPagingScrollViewController.swift in Sources */,
 				C8715E0F277B220B008FF43B /* VTNavigationItemExtension.swift in Sources */,
 				C820C094276350C900625CA9 /* VTString.swift in Sources */,
