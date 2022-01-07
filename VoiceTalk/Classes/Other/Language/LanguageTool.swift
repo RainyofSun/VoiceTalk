@@ -25,7 +25,7 @@ class LanguageTool: NSObject {
     
     /// 切换语言
     class func resetLanguage(languageName:String) {
-        UserDefaults.standard.setValue(languageName, forKey: "AppleLanguages");
+        UserDefaults.standard.setValue([languageName], forKey: "AppleLanguages");
         UserDefaults.standard.synchronize();
     }
     

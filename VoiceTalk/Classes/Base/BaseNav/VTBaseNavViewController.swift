@@ -70,7 +70,8 @@ class VTBaseNavViewController: UINavigationController, UINavigationControllerDel
 
     override func setNavigationBarHidden(_ hidden: Bool, animated: Bool) {
         super.setNavigationBarHidden(hidden, animated: animated)
-        let _isTransitioning: Bool = self.navigationController?.value(forKey: "_isTransitioning") as! Bool
+        // 判断是否正在执行push/pop动画
+        let _isTransitioning: Bool = ((self.navigationController?.value(forKey: "_isTransitioning")) != nil)
         if _isTransitioning {
            return
         }
@@ -91,7 +92,7 @@ class VTBaseNavViewController: UINavigationController, UINavigationControllerDel
             let gestureView = gesture?.view
             self.popGestureRecognizer.delegate = self.buildPopGestureDeleagte()
             gestureView?.addGestureRecognizer(self.popGestureRecognizer)
-            self.popGestureRecognizer.addTarget(self.vtNavigationInteractiveTransition, action: #selector(handleControllerPop(gesture:)))
+            self.popGestureRecognizer.addTarget(self, action: #selector(handleControllerPopGesture(gesture:)))
         }
         
         if self.children.contains(viewController) {
@@ -273,7 +274,7 @@ extension VTBaseNavViewController {
 
 // MARK - Action
 extension VTBaseNavViewController {
-    @objc func handleControllerPop(gesture: UIPanGestureRecognizer) {
-        
+    @objc func handleControllerPopGesture(gesture: UIPanGestureRecognizer) {
+        self.vtNavigationInteractiveTransition.handleControllerPop(recognizer: gesture)
     }
 }

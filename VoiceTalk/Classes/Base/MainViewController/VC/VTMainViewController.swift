@@ -46,7 +46,7 @@ class VTMainViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.mainVM.checkAppVersion();
 //        commonReques()
-        testRoute()
+//        testRoute()
     }
     
     func commonReques() {

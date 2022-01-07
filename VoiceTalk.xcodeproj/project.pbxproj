@@ -126,6 +126,8 @@
 		C89DB8202781C55E002FEBD2 /* VTWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB81F2781C55E002FEBD2 /* VTWKWebViewController.swift */; };
 		C89DB8222781C589002FEBD2 /* VTJSBridgeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB8212781C589002FEBD2 /* VTJSBridgeAction.swift */; };
 		C89DB8242782AD56002FEBD2 /* JS_GetSelected.js in Resources */ = {isa = PBXBuildFile; fileRef = C89DB8232782AD56002FEBD2 /* JS_GetSelected.js */; };
+		C8B6906D27881AF6009A5207 /* VTWKWebViewJavascriptBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6906C27881AF6009A5207 /* VTWKWebViewJavascriptBridge.swift */; };
+		C8B690712788331B009A5207 /* VTRunTimeMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B690702788331B009A5207 /* VTRunTimeMethods.swift */; };
 		C8D4ADC5276874DD007291EF /* VTStringURLEncode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */; };
 		C8E1D7D5276AD8A1005C9E6D /* VTArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */; };
 		C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */; };
@@ -264,6 +266,8 @@
 		C89DB81F2781C55E002FEBD2 /* VTWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWKWebViewController.swift; sourceTree = "<group>"; };
 		C89DB8212781C589002FEBD2 /* VTJSBridgeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTJSBridgeAction.swift; sourceTree = "<group>"; };
 		C89DB8232782AD56002FEBD2 /* JS_GetSelected.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JS_GetSelected.js; sourceTree = "<group>"; };
+		C8B6906C27881AF6009A5207 /* VTWKWebViewJavascriptBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTWKWebViewJavascriptBridge.swift; sourceTree = "<group>"; };
+		C8B690702788331B009A5207 /* VTRunTimeMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTRunTimeMethods.swift; sourceTree = "<group>"; };
 		C8D4ADC4276874DD007291EF /* VTStringURLEncode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTStringURLEncode.swift; sourceTree = "<group>"; };
 		C8E1D7D4276AD8A1005C9E6D /* VTArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTArray.swift; sourceTree = "<group>"; };
 		C8E1D7D7276AE2A4005C9E6D /* VTDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTDictionary.swift; sourceTree = "<group>"; };
@@ -972,6 +976,7 @@
 		C89DB8192781C2C0002FEBD2 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C8B6906F278832FB009A5207 /* RunTime */,
 				C8715E21277DCE26008FF43B /* TransitionAnimation */,
 				221CF1BF26462C7300593DF4 /* Alert */,
 				221D0C3D2635433C009F53DA /* Cache */,
@@ -987,8 +992,17 @@
 				C89DB81F2781C55E002FEBD2 /* VTWKWebViewController.swift */,
 				C89DB8212781C589002FEBD2 /* VTJSBridgeAction.swift */,
 				C89DB8232782AD56002FEBD2 /* JS_GetSelected.js */,
+				C8B6906C27881AF6009A5207 /* VTWKWebViewJavascriptBridge.swift */,
 			);
 			path = WKWeb;
+			sourceTree = "<group>";
+		};
+		C8B6906F278832FB009A5207 /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				C8B690702788331B009A5207 /* VTRunTimeMethods.swift */,
+			);
+			path = RunTime;
 			sourceTree = "<group>";
 		};
 		C8D4ADD22769C1CC007291EF /* String */ = {
@@ -1147,11 +1161,13 @@
 				221CF1B826462C1D00593DF4 /* VTBaseAlertViewController.swift in Sources */,
 				C87ED5DE2771571A00C68193 /* VTOpenPageContext.swift in Sources */,
 				22142C62262876A700C3499C /* PathPositionAnimation.swift in Sources */,
+				C8B6906D27881AF6009A5207 /* VTWKWebViewJavascriptBridge.swift in Sources */,
 				22142C66262876A700C3499C /* ConstraintConstantAnimation.swift in Sources */,
 				C89DB80927806907002FEBD2 /* VTAnimationNavigationBar.swift in Sources */,
 				225F4E3B26286635004FB177 /* VTBaseModel.swift in Sources */,
 				221D0C10263520C2009F53DA /* VTHudTool.swift in Sources */,
 				C87ED5E42772CE9300C68193 /* VTPhoneLoginViewController.swift in Sources */,
+				C8B690712788331B009A5207 /* VTRunTimeMethods.swift in Sources */,
 				22079C282623E6270039C406 /* AppDelegate.swift in Sources */,
 				22079C3F2623EA050039C406 /* VTBaseViewController.swift in Sources */,
 				22142C79262876A700C3499C /* ScaleAnimation.swift in Sources */,

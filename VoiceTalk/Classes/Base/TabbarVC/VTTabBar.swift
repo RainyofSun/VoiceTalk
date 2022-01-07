@@ -56,11 +56,11 @@ class VTTabBar: UIView {
         for itemIndex in 0..<count {
             let tempItem = self.items[itemIndex]
             if itemIndex < composeIndex {
-                tempItem.frame = CGRect.init(x: itemWidth * CGFloat(itemIndex) + marginX, y: 0, width: itemWidth, height: 49)
+                tempItem.frame = CGRect.init(x: itemWidth * CGFloat(itemIndex) + marginX, y: 8, width: itemWidth, height: 49)
             }
             if itemIndex > composeIndex {
                 let itemX = self.vt_width - (itemWidth * CGFloat((count - itemIndex)) + marginX)
-                tempItem.frame = CGRect.init(x: itemX, y: 0, width: itemWidth, height: 49)
+                tempItem.frame = CGRect.init(x: itemX, y: 8, width: itemWidth, height: 49)
             }
         }
         self.composeButton.frame = CGRect.init(x: self.vt_width * 0.5 - itemWidth * 0.5, y: self.normalBgView.vt_top - 8, width: itemWidth, height: 57)
