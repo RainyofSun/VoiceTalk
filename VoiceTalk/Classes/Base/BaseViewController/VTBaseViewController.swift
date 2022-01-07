@@ -132,7 +132,6 @@ class VTBaseViewController: UIViewController {
         if above_ios_13 {
             self.modalPresentationStyle = .fullScreen
         }
-        self.hidesBottomBarWhenPushed = true
         addNotification()
     }
     
@@ -160,9 +159,9 @@ class VTBaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         if self.navigationController?.presentedViewController == nil && self.shouldBaseControllNavBar! {
             if above_ios_11 {
-                self.navigationController?.setNavigationBarHidden(self.navigationItem.hideNavigationBar ?? false, animated: false)
+                self.navigationController?.setNavigationBarHidden(self.navigationItem.hideNavigationBar ?? true, animated: false)
             } else {
-                self.navigationController?.setNavigationBarHidden(self.navigationItem.hideNavigationBar ?? false, animated: animated)
+                self.navigationController?.setNavigationBarHidden(self.navigationItem.hideNavigationBar ?? true, animated: animated)
             }
         }
         super.viewWillAppear(animated)

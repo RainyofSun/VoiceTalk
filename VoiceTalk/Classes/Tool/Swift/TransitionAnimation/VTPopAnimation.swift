@@ -80,7 +80,7 @@ class VTPopAnimation: NSObject {
                 self.toTransBar!.setBackgroundImage(UIImage.imageWithColor(VTWhiteColor), for: .default)
                 self.toTransBar!.isTranslucent = false
             }
-            self.toTransBar!.isHidden = toViewController.navigationItem.hideNavigationBar ?? false
+            self.toTransBar!.isHidden = toViewController.navigationItem.hideNavigationBar ?? true
             self.toTransBar!.shadowImage = UIImage.init()
             self.toTransBar!.autoresizingMask = [.flexibleTopMargin,.flexibleLeftMargin]
             

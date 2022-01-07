@@ -10,6 +10,19 @@ import UIKit
 
 class VTZoneDynamicPageViewController: VTBaseViewController {
 
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        self.navigationItem.hideNavigationBar = true
+    }
+    
+    required init(context: VTOpenURLContext) {
+        fatalError("init(context:) has not been implemented")
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // kksksk
