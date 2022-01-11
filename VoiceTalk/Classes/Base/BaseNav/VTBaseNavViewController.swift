@@ -18,13 +18,6 @@ class VTBaseNavViewController: UINavigationController, UINavigationControllerDel
         }
     }
     open var animationViewController: UIViewController?
-    override var hidesBarsOnSwipe: Bool {
-        willSet {
-            if UINavigationController.instancesRespond(to: #selector(setter: hidesBarsOnSwipe)) {
-                self.hideBarGesture()?.isEnabled = hidesBarsOnSwipe
-            }
-        }
-    }
     
     private var navigationAnimating: Bool = false
     private lazy var statusBarBackground: UIView = buildStatusBackgroundView()
@@ -143,7 +136,7 @@ extension VTBaseNavViewController {
             self.pushViewController(tempController!, animated: false)
             self.blockedViewController = nil
         }
-        self.hidesBarsOnSwipe = viewController.navigationItem.hideNavigationBarOnSwipe ?? true
+        self.hidesBarsOnSwipe = viewController.navigationItem.hideNavigationBarOnSwipe ?? false
         let hideStatusBar: Bool = viewController.navigationItem.showStatusbarBackground ?? true
         self.setStatusBarBackgroundHidden(hidden: !hideStatusBar)
         navigationController.view.addSubview(self.statusBarBackground)
@@ -251,14 +244,6 @@ extension VTBaseNavViewController {
             self.view.bringSubviewToFront(self.navigationBar)
         }
         self.statusBarBackground.isHidden = hidden
-    }
-    
-    func hideBarGesture() -> UIGestureRecognizer? {
-        if self.responds(to: #selector(setter: hidesBarsOnTap)) {
-            let gesture = self.value(forKey: "__barSwipeHideGesture")
-            return gesture as? UIGestureRecognizer
-        }
-        return nil
     }
     
     func buildPopGestureDeleagte() -> VTPopGestureRecognizerDelegate {
