@@ -30,7 +30,7 @@ extension VTPopGestureRecognizerDelegate {
                 return false
             }
             // Ignore pan gesture when the navigation controller is currently in transition.
-            let _isTransitioning: Bool = self.navigationController!.value(forKey: "_isTransitioning") as! Bool
+            let _isTransitioning: Bool = self.navigationController!.value(forKey: "_isTransitioning") as? Bool ?? false
             if _isTransitioning {
                 return false
             }
