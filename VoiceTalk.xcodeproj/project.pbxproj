@@ -116,6 +116,23 @@
 		C87F7CBE2767334F009407AE /* VTOpenURLPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CBD2767334F009407AE /* VTOpenURLPreset.swift */; };
 		C87F7CC027673370009407AE /* VTOpenURLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CBF27673370009407AE /* VTOpenURLComponents.swift */; };
 		C87F7CC327673A30009407AE /* VTOpenURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F7CC227673A30009407AE /* VTOpenURLManager.swift */; };
+		C888B433278D8D570032C42C /* VTRSAEncrypo.m in Sources */ = {isa = PBXBuildFile; fileRef = C888B432278D8D560032C42C /* VTRSAEncrypo.m */; };
+		C888B43D278D8DCC0032C42C /* NSString+DESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C888B435278D8DCC0032C42C /* NSString+DESEncrypt.m */; };
+		C888B43E278D8DCC0032C42C /* NSData+DESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C888B436278D8DCC0032C42C /* NSData+DESEncrypt.m */; };
+		C888B43F278D8DCC0032C42C /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C888B437278D8DCC0032C42C /* NSData+MKBase64.m */; };
+		C888B440278D8DCC0032C42C /* STKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = C888B43B278D8DCC0032C42C /* STKeychain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C888B444278D8F170032C42C /* NSString+VTUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C888B443278D8F170032C42C /* NSString+VTUtilities.m */; };
+		C888B459278D90870032C42C /* LibRc4.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B449278D90860032C42C /* LibRc4.c */; };
+		C888B45A278D90870032C42C /* LibSha1.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B44B278D90860032C42C /* LibSha1.c */; };
+		C888B45B278D90870032C42C /* LibSha512.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B44E278D90860032C42C /* LibSha512.c */; };
+		C888B45C278D90870032C42C /* LibSha256.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B450278D90860032C42C /* LibSha256.c */; };
+		C888B45D278D90870032C42C /* LibMd5.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B451278D90860032C42C /* LibMd5.c */; };
+		C888B45E278D90870032C42C /* nice_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B452278D90860032C42C /* nice_hash.c */; };
+		C888B45F278D90870032C42C /* nice_sign.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B453278D90860032C42C /* nice_sign.c */; };
+		C888B460278D90870032C42C /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = C888B458278D90870032C42C /* cJSON.c */; };
+		C888B463278D99ED0032C42C /* VTSalt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888B462278D99ED0032C42C /* VTSalt.swift */; };
+		C888B466278E79430032C42C /* VTDeviceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888B465278E79420032C42C /* VTDeviceID.swift */; };
+		C888B469278E87360032C42C /* VTNetSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888B468278E87360032C42C /* VTNetSign.swift */; };
 		C89DB80727803AB3002FEBD2 /* VTAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80627803AB3002FEBD2 /* VTAnimatedTransitioning.swift */; };
 		C89DB80927806907002FEBD2 /* VTAnimationNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80827806907002FEBD2 /* VTAnimationNavigationBar.swift */; };
 		C89DB80B27806C33002FEBD2 /* VTPopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */; };
@@ -255,6 +272,37 @@
 		C87F7CBD2767334F009407AE /* VTOpenURLPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLPreset.swift; sourceTree = "<group>"; };
 		C87F7CBF27673370009407AE /* VTOpenURLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLComponents.swift; sourceTree = "<group>"; };
 		C87F7CC227673A30009407AE /* VTOpenURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTOpenURLManager.swift; sourceTree = "<group>"; };
+		C888B431278D8D560032C42C /* VTRSAEncrypo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTRSAEncrypo.h; sourceTree = "<group>"; };
+		C888B432278D8D560032C42C /* VTRSAEncrypo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTRSAEncrypo.m; sourceTree = "<group>"; };
+		C888B435278D8DCC0032C42C /* NSString+DESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DESEncrypt.m"; sourceTree = "<group>"; };
+		C888B436278D8DCC0032C42C /* NSData+DESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DESEncrypt.m"; sourceTree = "<group>"; };
+		C888B437278D8DCC0032C42C /* NSData+MKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MKBase64.m"; sourceTree = "<group>"; };
+		C888B438278D8DCC0032C42C /* STKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKeychain.h; sourceTree = "<group>"; };
+		C888B439278D8DCC0032C42C /* NSString+DESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DESEncrypt.h"; sourceTree = "<group>"; };
+		C888B43A278D8DCC0032C42C /* NSData+DESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DESEncrypt.h"; sourceTree = "<group>"; };
+		C888B43B278D8DCC0032C42C /* STKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKeychain.m; sourceTree = "<group>"; };
+		C888B43C278D8DCC0032C42C /* NSData+MKBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MKBase64.h"; sourceTree = "<group>"; };
+		C888B442278D8F170032C42C /* NSString+VTUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+VTUtilities.h"; sourceTree = "<group>"; };
+		C888B443278D8F170032C42C /* NSString+VTUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+VTUtilities.m"; sourceTree = "<group>"; };
+		C888B448278D90860032C42C /* LibSha512.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibSha512.h; sourceTree = "<group>"; };
+		C888B449278D90860032C42C /* LibRc4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LibRc4.c; sourceTree = "<group>"; };
+		C888B44A278D90860032C42C /* LibSha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibSha256.h; sourceTree = "<group>"; };
+		C888B44B278D90860032C42C /* LibSha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LibSha1.c; sourceTree = "<group>"; };
+		C888B44C278D90860032C42C /* LibMd5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibMd5.h; sourceTree = "<group>"; };
+		C888B44D278D90860032C42C /* LibRc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibRc4.h; sourceTree = "<group>"; };
+		C888B44E278D90860032C42C /* LibSha512.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LibSha512.c; sourceTree = "<group>"; };
+		C888B44F278D90860032C42C /* LibSha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibSha1.h; sourceTree = "<group>"; };
+		C888B450278D90860032C42C /* LibSha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LibSha256.c; sourceTree = "<group>"; };
+		C888B451278D90860032C42C /* LibMd5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LibMd5.c; sourceTree = "<group>"; };
+		C888B452278D90860032C42C /* nice_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nice_hash.c; sourceTree = "<group>"; };
+		C888B453278D90860032C42C /* nice_sign.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nice_sign.c; sourceTree = "<group>"; };
+		C888B454278D90860032C42C /* nice_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nice_hash.h; sourceTree = "<group>"; };
+		C888B455278D90860032C42C /* nice_sign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nice_sign.h; sourceTree = "<group>"; };
+		C888B457278D90870032C42C /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
+		C888B458278D90870032C42C /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
+		C888B462278D99ED0032C42C /* VTSalt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTSalt.swift; sourceTree = "<group>"; };
+		C888B465278E79420032C42C /* VTDeviceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTDeviceID.swift; sourceTree = "<group>"; };
+		C888B468278E87360032C42C /* VTNetSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetSign.swift; sourceTree = "<group>"; };
 		C89DB80627803AB3002FEBD2 /* VTAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		C89DB80827806907002FEBD2 /* VTAnimationNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnimationNavigationBar.swift; sourceTree = "<group>"; };
 		C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPopAnimation.swift; sourceTree = "<group>"; };
@@ -501,6 +549,7 @@
 		221CF1AD26462B6700593DF4 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				C888B441278D8EFE0032C42C /* NSString */,
 				C89DB8132781C21E002FEBD2 /* UIImage */,
 			);
 			path = OC;
@@ -723,6 +772,8 @@
 		C820C0702761E5AD00625CA9 /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				C888B467278E871D0032C42C /* Sign */,
+				C888B461278D99C50032C42C /* Salt */,
 				C87F7CB227672118009407AE /* Header */,
 				C820C08627633E7700625CA9 /* Plugin */,
 				C820C08327632BDD00625CA9 /* Response */,
@@ -947,6 +998,111 @@
 			path = OpenURLManager;
 			sourceTree = "<group>";
 		};
+		C888B430278D8D300032C42C /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				C888B446278D90790032C42C /* CSign */,
+				C888B445278D90680032C42C /* RSA */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		C888B434278D8DCC0032C42C /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				C888B43A278D8DCC0032C42C /* NSData+DESEncrypt.h */,
+				C888B436278D8DCC0032C42C /* NSData+DESEncrypt.m */,
+				C888B43C278D8DCC0032C42C /* NSData+MKBase64.h */,
+				C888B437278D8DCC0032C42C /* NSData+MKBase64.m */,
+				C888B439278D8DCC0032C42C /* NSString+DESEncrypt.h */,
+				C888B435278D8DCC0032C42C /* NSString+DESEncrypt.m */,
+				C888B438278D8DCC0032C42C /* STKeychain.h */,
+				C888B43B278D8DCC0032C42C /* STKeychain.m */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		C888B441278D8EFE0032C42C /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				C888B442278D8F170032C42C /* NSString+VTUtilities.h */,
+				C888B443278D8F170032C42C /* NSString+VTUtilities.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		C888B445278D90680032C42C /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				C888B431278D8D560032C42C /* VTRSAEncrypo.h */,
+				C888B432278D8D560032C42C /* VTRSAEncrypo.m */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		C888B446278D90790032C42C /* CSign */ = {
+			isa = PBXGroup;
+			children = (
+				C888B456278D90870032C42C /* cJSON */,
+				C888B447278D90860032C42C /* lib */,
+				C888B452278D90860032C42C /* nice_hash.c */,
+				C888B454278D90860032C42C /* nice_hash.h */,
+				C888B453278D90860032C42C /* nice_sign.c */,
+				C888B455278D90860032C42C /* nice_sign.h */,
+			);
+			path = CSign;
+			sourceTree = "<group>";
+		};
+		C888B447278D90860032C42C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C888B448278D90860032C42C /* LibSha512.h */,
+				C888B449278D90860032C42C /* LibRc4.c */,
+				C888B44A278D90860032C42C /* LibSha256.h */,
+				C888B44B278D90860032C42C /* LibSha1.c */,
+				C888B44C278D90860032C42C /* LibMd5.h */,
+				C888B44D278D90860032C42C /* LibRc4.h */,
+				C888B44E278D90860032C42C /* LibSha512.c */,
+				C888B44F278D90860032C42C /* LibSha1.h */,
+				C888B450278D90860032C42C /* LibSha256.c */,
+				C888B451278D90860032C42C /* LibMd5.c */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C888B456278D90870032C42C /* cJSON */ = {
+			isa = PBXGroup;
+			children = (
+				C888B457278D90870032C42C /* cJSON.h */,
+				C888B458278D90870032C42C /* cJSON.c */,
+			);
+			path = cJSON;
+			sourceTree = "<group>";
+		};
+		C888B461278D99C50032C42C /* Salt */ = {
+			isa = PBXGroup;
+			children = (
+				C888B462278D99ED0032C42C /* VTSalt.swift */,
+			);
+			path = Salt;
+			sourceTree = "<group>";
+		};
+		C888B464278E78FB0032C42C /* DeviceID */ = {
+			isa = PBXGroup;
+			children = (
+				C888B465278E79420032C42C /* VTDeviceID.swift */,
+			);
+			path = DeviceID;
+			sourceTree = "<group>";
+		};
+		C888B467278E871D0032C42C /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				C888B468278E87360032C42C /* VTNetSign.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
 		C89DB8132781C21E002FEBD2 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -968,6 +1124,8 @@
 		C89DB8182781C2B6002FEBD2 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				C888B434278D8DCC0032C42C /* Security */,
+				C888B430278D8D300032C42C /* Sign */,
 				C89DB8142781C22A002FEBD2 /* SafeDictionary */,
 			);
 			path = OC;
@@ -976,6 +1134,7 @@
 		C89DB8192781C2C0002FEBD2 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C888B464278E78FB0032C42C /* DeviceID */,
 				C8B6906F278832FB009A5207 /* RunTime */,
 				C8715E21277DCE26008FF43B /* TransitionAnimation */,
 				221CF1BF26462C7300593DF4 /* Alert */,
@@ -1170,12 +1329,14 @@
 				C8B690712788331B009A5207 /* VTRunTimeMethods.swift in Sources */,
 				22079C282623E6270039C406 /* AppDelegate.swift in Sources */,
 				22079C3F2623EA050039C406 /* VTBaseViewController.swift in Sources */,
+				C888B45A278D90870032C42C /* LibSha1.c in Sources */,
 				22142C79262876A700C3499C /* ScaleAnimation.swift in Sources */,
 				22142C72262876A700C3499C /* AlphaAnimation.swift in Sources */,
 				221CF1B526462B7300593DF4 /* TopController.swift in Sources */,
 				221CF1B326462B7300593DF4 /* UIImage+SVGManager.m in Sources */,
 				22142C7D26292DE800C3499C /* AppGuideAnimationViewController.swift in Sources */,
 				C89DB80F2781546B002FEBD2 /* VTViewImage.swift in Sources */,
+				C888B433278D8D570032C42C /* VTRSAEncrypo.m in Sources */,
 				C87ED5F42775617800C68193 /* VTStringSize.swift in Sources */,
 				C820C0762761EA9800625CA9 /* VTServer.swift in Sources */,
 				22142C7A262876A700C3499C /* CornerRadiusAnimation.swift in Sources */,
@@ -1197,12 +1358,17 @@
 				C89DB8222781C589002FEBD2 /* VTJSBridgeAction.swift in Sources */,
 				C8EC38912785A5F8002A2E17 /* VTNavigationTitleView.swift in Sources */,
 				22142C73262876A700C3499C /* Animatable.swift in Sources */,
+				C888B460278D90870032C42C /* cJSON.c in Sources */,
+				C888B440278D8DCC0032C42C /* STKeychain.m in Sources */,
 				22142C69262876A700C3499C /* ScrollViewPageConstraintAnimation.swift in Sources */,
 				C87F7CC327673A30009407AE /* VTOpenURLManager.swift in Sources */,
 				C87ED5E72773308D00C68193 /* VTObjectMethod.swift in Sources */,
 				C87ED5F927757B6500C68193 /* VTObjectThread.swift in Sources */,
 				C89DB8172781C250002FEBD2 /* VTThreadSafeMutableDictionary.m in Sources */,
+				C888B43F278D8DCC0032C42C /* NSData+MKBase64.m in Sources */,
+				C888B45D278D90870032C42C /* LibMd5.c in Sources */,
 				221CF1BD26462C4C00593DF4 /* MinSpaceFile.swift in Sources */,
+				C888B43E278D8DCC0032C42C /* NSData+DESEncrypt.m in Sources */,
 				22142C71262876A700C3499C /* LayerStrokeColorAnimation.swift in Sources */,
 				C87F7CC027673370009407AE /* VTOpenURLComponents.swift in Sources */,
 				222F7A3E264A3793004FB29A /* VTVersionModel.swift in Sources */,
@@ -1212,6 +1378,7 @@
 				22142C75262876A700C3499C /* Animator.swift in Sources */,
 				C820C08527632BFC00625CA9 /* VTNetResponse.swift in Sources */,
 				C820C08827633EB700625CA9 /* VTNetworkActivityPlugin.swift in Sources */,
+				C888B45E278D90870032C42C /* nice_hash.c in Sources */,
 				C820C08A27633F4300625CA9 /* VTLoggorPlugin.swift in Sources */,
 				C87ED5EF27748C0600C68193 /* VTTabBarItem.swift in Sources */,
 				22142C87262963CA00C3499C /* ServiceAddressFile.swift in Sources */,
@@ -1225,18 +1392,23 @@
 				C89DB80B27806C33002FEBD2 /* VTPopAnimation.swift in Sources */,
 				227DD4A42627E402006C8377 /* VTMainViewController.swift in Sources */,
 				C86E918427843B3C00F423E3 /* VTCustomClickSizeButton.swift in Sources */,
+				C888B45F278D90870032C42C /* nice_sign.c in Sources */,
 				22192DF3262D8CC20018E7B7 /* VTChatPageViewController.swift in Sources */,
 				22142C6A262876A700C3499C /* Animation.swift in Sources */,
 				22142C63262876A700C3499C /* EasingFunction.swift in Sources */,
 				221D0C3F26354355009F53DA /* VTUserInfoCache.swift in Sources */,
 				C87ED5F727756C5400C68193 /* VTViewExtension.swift in Sources */,
+				C888B45B278D90870032C42C /* LibSha512.c in Sources */,
+				C888B444278D8F170032C42C /* NSString+VTUtilities.m in Sources */,
 				C87ED5F227748D9C00C68193 /* VTRedPointLabel.swift in Sources */,
 				C8EC388D27858427002A2E17 /* VTTopWarningControl.swift in Sources */,
 				C8E1D7D8276AE2A4005C9E6D /* VTDictionary.swift in Sources */,
 				C8EC388F278594AD002A2E17 /* VTTopViewController.swift in Sources */,
 				221D0BEB263514CE009F53DA /* UserDefaultsKeyFile.swift in Sources */,
+				C888B466278E79430032C42C /* VTDeviceID.swift in Sources */,
 				22142C78262876A700C3499C /* Filmstrip.swift in Sources */,
 				C86E917E2784313300F423E3 /* VTNODataLabel.swift in Sources */,
+				C888B45C278D90870032C42C /* LibSha256.c in Sources */,
 				22142C76262876A700C3499C /* LabelTextColorAnimation.swift in Sources */,
 				22142C6B262876A700C3499C /* LayerStrokeStartAnimation.swift in Sources */,
 				22142C6C262876A700C3499C /* LayerFillColorAnimation.swift in Sources */,
@@ -1244,10 +1416,13 @@
 				22192DFA262D8D160018E7B7 /* VTTabbarViewController.swift in Sources */,
 				C89DB80727803AB3002FEBD2 /* VTAnimatedTransitioning.swift in Sources */,
 				C8715E20277DC46A008FF43B /* VTNavigationInteractiveTransition.swift in Sources */,
+				C888B463278D99ED0032C42C /* VTSalt.swift in Sources */,
 				C820C07F2762281800625CA9 /* VTNetworkError.swift in Sources */,
 				C820C08C2763416D00625CA9 /* VTRequest.swift in Sources */,
 				22142C85262961F000C3499C /* ServiceInterviceFile.swift in Sources */,
+				C888B43D278D8DCC0032C42C /* NSString+DESEncrypt.m in Sources */,
 				C87ED5EC2774511100C68193 /* VTTabBar.swift in Sources */,
+				C888B459278D90870032C42C /* LibRc4.c in Sources */,
 				C86B9ACC27784D0300D072E2 /* UIImageExtension.swift in Sources */,
 				221CF1BC26462C4C00593DF4 /* FontFile.swift in Sources */,
 				C89DB80D27806C87002FEBD2 /* VTPushAnimation.swift in Sources */,
@@ -1257,6 +1432,7 @@
 				22192DF6262D8CD00018E7B7 /* VTMinePageViewController.swift in Sources */,
 				221D0C4226354A18009F53DA /* VTGlobalStatusModel.swift in Sources */,
 				22142C812629306B00C3499C /* VTBaseViewModel.swift in Sources */,
+				C888B469278E87360032C42C /* VTNetSign.swift in Sources */,
 				221D0BC02632A8CF009F53DA /* ColorFile.swift in Sources */,
 				22142C65262876A700C3499C /* RotationAnimation.swift in Sources */,
 				221D0BC32632AEF4009F53DA /* BundlePathFile.swift in Sources */,

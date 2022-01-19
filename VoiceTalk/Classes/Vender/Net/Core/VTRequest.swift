@@ -111,9 +111,17 @@ extension CommonAPI:VTServerType {
         if let temp = newParameters {
             temp.forEach { (arg) in
                 let (key, value) = arg
-                requeseParameters?[key] = value
+                requeseParameters[key] = value
             }
         }
-        return requeseParameters;
+        // 参数加密验签
+        let salt: String = VTSalt.salt()
+        let jsonStr: String = String.convertDictionaryToString(dict: newParameters ?? [:])
+        let sign: String = VTNetSign.signWithContent(content: jsonStr, salt: salt)
+        let signContent: String = "nice-sign-v1://" + sign + ":" + salt + "/" + jsonStr
+        requeseParameters.removeAll()
+        let signData: Data = signContent.data(using: .utf8) ?? Data()
+        requeseParameters["data"] = signData
+        return requeseParameters
     }
 }

@@ -11,19 +11,23 @@ import UIKit
 class VTServer: NSObject {
     var rootUrl: String = ServiceAddress
     var headers: [String:String]? = defaultHeaders()
-    var parameters : [String : Any]? = defaultParameters()
+    var parameters : [String : Any] = defaultParameters()
     var timeOutInterval : Double = 20.0  // 请求超时时间
     
     static let shared = VTServer();
     private override init() {};
     
     static func defaultHeaders() -> [String : String]? {
-        return ["deviceID":"122","Authorization":""];
+        return ["deviceID":VTDeviceID.VTDeviceID32(),"Authorization":""];
     }
     
-    static func defaultParameters() -> [String : Any]? {
-        return ["platform" : "ios",
-                "version" : "1.2.3",
-        ];
+    static func defaultParameters() -> [String : Any] {
+        var tempParameters: [String: Any] = ["appv" : currentVersion,
+                                               "osn" : "iOS",
+                                               "did": VTDeviceID.VTDeviceID32()]
+        if VTGlobalStatusModel.shared.userInfoModel != nil && VTGlobalStatusModel.shared.userInfoModel.token != nil {
+            tempParameters["token"] = VTGlobalStatusModel.shared.userInfoModel.token!
+        }
+        return tempParameters
     }
 }

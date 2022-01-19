@@ -75,8 +75,10 @@ extension VTNetworking {
      */
     static func endpointsClosure<T>() -> (T) -> Endpoint where T: VTServerType {
         return { target in
+            let targetUrl: URL = URL.init(target: target)
+            let targetPath: String = targetUrl.absoluteString.addExtensionParams()
             let defaultEndpoint = Endpoint(
-                url: URL(target: target).absoluteString,
+                url: targetPath,
                 sampleResponseClosure: { target.sampleResponse },
                 method: target.method,
                 task: target.task,
@@ -154,4 +156,19 @@ func newSession(delegate: SessionDelegate = SessionDelegate(),
                           serverTrustManager: serverTrustManager)
     
     return session
+}
+
+extension String {
+    func addExtensionParams() -> String {
+        let arr = VTServer.shared.parameters.sorted{ (t1, t2) -> Bool in
+            return t1.0 < t2.0
+        }
+        //变形 - “k=v”
+        let strArr = arr.map{ (k:String,v:Any) -> String in
+            return String(format:"%@=%@",k,String(describing: v))
+        }
+        //拼接 - “k1=v1&k2=v2&k3=v3...”
+        let str = strArr.joined(separator:"&")
+        return self + "?" + str
+    }
 }

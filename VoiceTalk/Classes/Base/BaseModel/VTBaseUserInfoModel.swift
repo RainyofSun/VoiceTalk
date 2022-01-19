@@ -16,7 +16,6 @@ class VTBaseUserInfoModel: VTBaseModel,NSCoding {
     var nickname : String?
     var accountNo : String?
     var token : String?
-    var rcToken : String?
     var loginTime : String?
     
     var userStories : String?
@@ -34,7 +33,6 @@ class VTBaseUserInfoModel: VTBaseModel,NSCoding {
         aCoder.encode(nickname, forKey: "nickname");
         aCoder.encode(accountNo,forKey: "accountNo");
         aCoder.encode(token,forKey: "token");
-        aCoder.encode(rcToken,forKey: "rcToken");
         aCoder.encode(userStories,forKey: "userStories");
         aCoder.encode(country,forKey: "country");
         aCoder.encode(birthday, forKey: "birthday");
@@ -48,7 +46,6 @@ class VTBaseUserInfoModel: VTBaseModel,NSCoding {
         nickname = aDecoder.decodeObject(forKey: "nickname") as? String
         accountNo = aDecoder.decodeObject(forKey: "accountNo") as? String
         token = aDecoder.decodeObject(forKey: "token") as? String
-        rcToken = aDecoder.decodeObject(forKey: "rcToken") as? String
         userStories = aDecoder.decodeObject(forKey: "userStories") as? String
         birthday = aDecoder.decodeObject(forKey: "birthday") as? String
         country = aDecoder.decodeObject(forKey: "country") as? String

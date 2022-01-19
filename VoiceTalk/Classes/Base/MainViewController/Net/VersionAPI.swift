@@ -11,21 +11,21 @@ import UIKit
 let VersionProvider = MoyaProvider<VersionAPI>();
 
 enum VersionAPI {
-    case CheckAppVersion;
+    case CheckAppVersion
+    case Login
 }
 
 extension VersionAPI:TargetType {
     var baseURL: URL {
-        switch self {
-        case .CheckAppVersion:
-            return URL.init(string: ServiceAddress + CheckVersion)!;
-        }
+        return URL.init(string: ServiceAddress)!
     }
     
     var path: String {
         switch self {
         case .CheckAppVersion:
-            return "";
+            return CheckVersion;
+        case .Login:
+            return "account/login?".addExtensionParams()
         }
     }
     
@@ -43,6 +43,16 @@ extension VersionAPI:TargetType {
         switch self {
         case .CheckAppVersion:
             return .requestData(params.mapToJson());
+        case .Login:
+            let parameters = ["country": "1","mobile":"10112521511",
+                              "password":VTRSAEncrypo.rsaEncrypotoTheData("1234567"),
+                              "platform":"mobile"]
+            let salt: String = VTSalt.salt()
+            let jsonStr: String = String.convertDictionaryToString(dict: parameters)
+            let sign: String = VTNetSign.signWithContent(content: jsonStr, salt: salt)
+            let signKey: String = "nice-sign-v1://" + sign
+            let signValue: String = salt + "/" + jsonStr
+            return .requestData([signKey:signValue].mapToJson())
         }
     }
     

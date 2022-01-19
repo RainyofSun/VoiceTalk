@@ -40,48 +40,42 @@ class VTMainViewController: UIViewController {
 //        testStr()
 //        testDict()
 //        commonInit()
-        testRedPoint()
+//        testRedPoint()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.mainVM.checkAppVersion();
-//        commonReques()
+        commonReques()
 //        testRoute()
     }
-    
     func commonReques() {
-        
-//        let username = "chensx1993".urlEscaped
-//        let url = "users/\(username)"
-//        let parameters = ["sort": "pushed"]
-//
-//        VTRequest.post(url, parameters: parameters, callbackQueue: .main, progress: nil) { response in
-//            do {
-//                let json = try response.mapJSON()
-//                printLog("test post \(url): \(json)");
-//
-//            } catch(let error) {
-//                printLog("error: \(error)");
-//            }
-//        } failure: { error in
-//            printLog("error: \(error)");
-//        }
-        
-//        let url1 = "toutiao/index"
-//        let parameters1:[String:Any] = ["page": "1","page_size":20,"type":"top","key":"1556e6a8727672ced0deb4007782429c"]
-//        VTRequest.get(url1, parameters: parameters1, callbackQueue: DispatchQueue.main, progress: { (progress) in
-//
-//        }, success: { (response) in
-//            do {
-//                let json = try response.mapJSON()
-//                print("test post \(url): \(json)");
-//
-//            } catch(let error) {
-//                print("error: \(error)");
-//            }
-//        }) { (error) in
-//            print("error: \(error)");
-//        }
+        let url = "feed/lookscollect"
+        let parameters = [
+            "comments_sort" : "asc",
+            "density" : 3,
+            "idfa" : "9f89c84a559f573636a47ff8daed0d33",
+            "idfv" : "97061ab7b51b87d30f2072c9dbaca7c7",
+            "isnewsession" : "1",
+            "mac" : "02:00:00:00:00:00",
+            "mark_read_sid" : 463626809265733648,
+            "mcc" : "",
+            "mnc" : "",
+            "nextkey" : "",
+            "openudid" : "5769cd7b13ce57fd42ffc89ca1fce1f0",
+            "timestamp" : 0,
+            "ua" : "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148"
+        ] as [String : Any]
+        VTRequest.post(url, parameters: parameters, callbackQueue: .main, progress: nil) { response in
+            do {
+                let json = try response.mapJSON()
+                printLog("test post \(url): \(json)");
+
+            } catch(let error) {
+                printLog("error: \(error)");
+            }
+        } failure: { error in
+            printLog("error: \(error)");
+        }
     }
     
     deinit {

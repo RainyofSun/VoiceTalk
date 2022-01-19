@@ -37,7 +37,11 @@ extension VTServerType {
             encoding = URLEncoding.default
         }
         if let requestParameters = parameters {
-            return .requestParameters(parameters: requestParameters, encoding: encoding);
+            if requestParameters.values.first is Data {
+                return .requestData(requestParameters.values.first as! Data)
+            } else {
+                return .requestParameters(parameters: requestParameters, encoding: encoding);
+            }
         }
         return .requestPlain
     }
