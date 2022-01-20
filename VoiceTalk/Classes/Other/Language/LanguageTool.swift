@@ -29,6 +29,26 @@ class LanguageTool: NSObject {
         UserDefaults.standard.synchronize();
     }
     
+    /// 当前语言是否是中文
+    class func isChinese() -> Bool {
+        return getLanguageType() == CHINESE
+    }
+    
+    /// 当前语言是否是英文
+    class func isEnglish() -> Bool {
+        return getLanguageType() == ENGLISH
+    }
+    
+    /// 当前语言是否是维文
+    class func isUygur() -> Bool {
+        return false
+    }
+    
+    /// 当前语言是否是哈文
+    class func isKazakh() -> Bool {
+        return false
+    }
+    
     /// 获取多语言类型
     private class func getLanguageType() -> String {
         let languages : [String] = UserDefaults.standard.object(forKey: "AppleLanguages") as! Array;

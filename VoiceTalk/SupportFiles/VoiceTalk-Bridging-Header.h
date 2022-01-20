@@ -14,3 +14,5 @@
 #import "UIImage+SVGManager.h"
 #import "VTThreadSafeMutableDictionary.h"
 #import "NSString+VTUtilities.h"
+#import "NSFileManager+VTFileExist.h"
+

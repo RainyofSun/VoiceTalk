@@ -26,7 +26,7 @@ class VTMainViewModel: VTBaseViewModel {
         VTGlobalStatusModel.shared.userInfoModel = VTUserInfoCache.getCacheUserModel();
         printLog("用户信息 %@",VTGlobalStatusModel.shared.userInfoModel ?? "没有用户信息");
         if VTGlobalStatusModel.shared.userInfoModel != nil && VTGlobalStatusModel.shared.isLogin {
-            let time = self.getNowTimeStamp();
+            let time = Date.getNowTimeStamp();
             let serviceTime = Int(VTGlobalStatusModel.shared.userInfoModel.loginTime!);
             if (serviceTime! - time) > tokenExpireTime {
                 VTGlobalStatusModel.shared.rersetData();

@@ -9,9 +9,11 @@
 import UIKit
 
 extension Dictionary {
-    static func dictionaryWithDictionary(otherDict:Dictionary<String,Any>) -> Dictionary<String,Any> {
+    static func dictionaryWithDictionary(otherDict:Dictionary<String,Any>?) -> Dictionary<String,Any> {
         var tempDict = Dictionary<String,Any>.init()
-        tempDict.merge(otherDict) {(current,_) -> Any in current}
+        if otherDict != nil {
+            tempDict.merge(otherDict!) {(current,_) -> Any in current}
+        }
         return tempDict
     }
 }

@@ -133,6 +133,9 @@
 		C888B463278D99ED0032C42C /* VTSalt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888B462278D99ED0032C42C /* VTSalt.swift */; };
 		C888B466278E79430032C42C /* VTDeviceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888B465278E79420032C42C /* VTDeviceID.swift */; };
 		C888B469278E87360032C42C /* VTNetSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C888B468278E87360032C42C /* VTNetSign.swift */; };
+		C8906ACB2797B53B009A66EB /* VTAnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8906ACA2797B53A009A66EB /* VTAnalysisManager.swift */; };
+		C8906ACD2797B54B009A66EB /* VTLogCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8906ACC2797B54B009A66EB /* VTLogCache.swift */; };
+		C8906AD92797FA02009A66EB /* NSFileManager+VTFileExist.m in Sources */ = {isa = PBXBuildFile; fileRef = C8906AD82797FA02009A66EB /* NSFileManager+VTFileExist.m */; };
 		C89DB80727803AB3002FEBD2 /* VTAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80627803AB3002FEBD2 /* VTAnimatedTransitioning.swift */; };
 		C89DB80927806907002FEBD2 /* VTAnimationNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80827806907002FEBD2 /* VTAnimationNavigationBar.swift */; };
 		C89DB80B27806C33002FEBD2 /* VTPopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */; };
@@ -303,6 +306,10 @@
 		C888B462278D99ED0032C42C /* VTSalt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTSalt.swift; sourceTree = "<group>"; };
 		C888B465278E79420032C42C /* VTDeviceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTDeviceID.swift; sourceTree = "<group>"; };
 		C888B468278E87360032C42C /* VTNetSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTNetSign.swift; sourceTree = "<group>"; };
+		C8906ACA2797B53A009A66EB /* VTAnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnalysisManager.swift; sourceTree = "<group>"; };
+		C8906ACC2797B54B009A66EB /* VTLogCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTLogCache.swift; sourceTree = "<group>"; };
+		C8906AD72797FA02009A66EB /* NSFileManager+VTFileExist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+VTFileExist.h"; sourceTree = "<group>"; };
+		C8906AD82797FA02009A66EB /* NSFileManager+VTFileExist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+VTFileExist.m"; sourceTree = "<group>"; };
 		C89DB80627803AB3002FEBD2 /* VTAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		C89DB80827806907002FEBD2 /* VTAnimationNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnimationNavigationBar.swift; sourceTree = "<group>"; };
 		C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPopAnimation.swift; sourceTree = "<group>"; };
@@ -549,6 +556,7 @@
 		221CF1AD26462B6700593DF4 /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				C8906AD62797F9E1009A66EB /* NSFileManager */,
 				C888B441278D8EFE0032C42C /* NSString */,
 				C89DB8132781C21E002FEBD2 /* UIImage */,
 			);
@@ -558,6 +566,7 @@
 		221CF1B026462B7200593DF4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				C8906ADA279815CA009A66EB /* Date */,
 				C86E91852784442200F423E3 /* UIControl */,
 				C86B9ACA27784CEB00D072E2 /* UIImage */,
 				C87ED5F527756C3500C68193 /* View */,
@@ -565,7 +574,6 @@
 				C8E1D7D6276AE28E005C9E6D /* Dictionary */,
 				C8E1D7D3276AD890005C9E6D /* Array */,
 				C8D4ADD22769C1CC007291EF /* String */,
-				221CF1B126462B7200593DF4 /* Date.swift */,
 				221CF1B226462B7200593DF4 /* TopController.swift */,
 				222F7A33264A1EA8004FB29A /* MapExtension.swift */,
 			);
@@ -712,6 +720,7 @@
 		227DD4992627248B006C8377 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C8906AC92797B505009A66EB /* Analysis */,
 				C89DB81A2781C38D002FEBD2 /* WKWeb */,
 				C87F7CB527672D60009407AE /* OpenURL */,
 				C820C0702761E5AD00625CA9 /* Net */,
@@ -1103,6 +1112,32 @@
 			path = Sign;
 			sourceTree = "<group>";
 		};
+		C8906AC92797B505009A66EB /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				C8906ACA2797B53A009A66EB /* VTAnalysisManager.swift */,
+				C8906ACC2797B54B009A66EB /* VTLogCache.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		C8906AD62797F9E1009A66EB /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				C8906AD72797FA02009A66EB /* NSFileManager+VTFileExist.h */,
+				C8906AD82797FA02009A66EB /* NSFileManager+VTFileExist.m */,
+			);
+			path = NSFileManager;
+			sourceTree = "<group>";
+		};
+		C8906ADA279815CA009A66EB /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				221CF1B126462B7200593DF4 /* Date.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 		C89DB8132781C21E002FEBD2 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1367,6 +1402,7 @@
 				C89DB8172781C250002FEBD2 /* VTThreadSafeMutableDictionary.m in Sources */,
 				C888B43F278D8DCC0032C42C /* NSData+MKBase64.m in Sources */,
 				C888B45D278D90870032C42C /* LibMd5.c in Sources */,
+				C8906AD92797FA02009A66EB /* NSFileManager+VTFileExist.m in Sources */,
 				221CF1BD26462C4C00593DF4 /* MinSpaceFile.swift in Sources */,
 				C888B43E278D8DCC0032C42C /* NSData+DESEncrypt.m in Sources */,
 				22142C71262876A700C3499C /* LayerStrokeColorAnimation.swift in Sources */,
@@ -1434,6 +1470,7 @@
 				22142C812629306B00C3499C /* VTBaseViewModel.swift in Sources */,
 				C888B469278E87360032C42C /* VTNetSign.swift in Sources */,
 				221D0BC02632A8CF009F53DA /* ColorFile.swift in Sources */,
+				C8906ACD2797B54B009A66EB /* VTLogCache.swift in Sources */,
 				22142C65262876A700C3499C /* RotationAnimation.swift in Sources */,
 				221D0BC32632AEF4009F53DA /* BundlePathFile.swift in Sources */,
 				C89DB8202781C55E002FEBD2 /* VTWKWebViewController.swift in Sources */,
@@ -1448,6 +1485,7 @@
 				221D0BE826351076009F53DA /* VTMainViewModel.swift in Sources */,
 				C87F7CB427672134009407AE /* VTNetHeader.swift in Sources */,
 				222F7A0726491061004FB29A /* LanguageTool.swift in Sources */,
+				C8906ACB2797B53B009A66EB /* VTAnalysisManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

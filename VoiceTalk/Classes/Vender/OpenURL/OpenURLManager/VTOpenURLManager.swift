@@ -184,7 +184,7 @@ extension VTOpenURLManager {
                     UIApplication.shared.openURL(tempUrl as URL)
                     return nil
                 }
-                var tempDict:Dictionary<String,Any> = Dictionary<String, Any>.dictionaryWithDictionary(otherDict: parameters ?? Dictionary<String,String>.init())
+                var tempDict:Dictionary<String,Any> = Dictionary<String, Any>.dictionaryWithDictionary(otherDict: parameters)
                 var queryString = self.queryStringFromDict(dict: tempDict, originalUrl: tempUrl.absoluteString!)
                 if queryString.count != 0 {
                     tempDict["url"] = tempUrl.absoluteString! + queryString
