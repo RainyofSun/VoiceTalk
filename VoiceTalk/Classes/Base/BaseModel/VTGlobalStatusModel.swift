@@ -17,15 +17,16 @@ class VTGlobalStatusModel: NSObject {
     /** 用户是否登陆 */
     var isLogin :Bool {
         get {
-            return self.userInfoModel.token != nil && self.userInfoModel.token?.count != 0
+            if self.userInfoModel != nil {
+                return self.userInfoModel.token != nil && self.userInfoModel.token?.count != 0
+            }
+            return false
         }
     }
     
     static let shared = VTGlobalStatusModel();
     
-    private override init() {
-    
-    }
+    private override init() {}
     
     override func copy() -> Any {
         return self;

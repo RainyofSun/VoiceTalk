@@ -17,7 +17,7 @@ enum VTActionLogType: Int {
 class VTAnalysisManager: NSObject {
     
     private let io_queue: DispatchQueue = DispatchQueue(label: "com.nice.analysis_io_queue")
-    private let defaultLogCache: VTLogCache = VTLogCache.init(logName: "log.data", api: "app", maxSize: 500)
+    private let defaultLogCache: VTLogCache = VTLogCache.init(logName: "log.data", api: "app")
     
     static let shared = VTAnalysisManager();
     private override init() {};
@@ -51,7 +51,9 @@ class VTAnalysisManager: NSObject {
             if parameters != nil {
                 log["attr"] = parameters!
             }
-            log["uid"] = VTGlobalStatusModel.shared.userInfoModel.userId
+            if VTGlobalStatusModel.shared.isLogin {
+                log["uid"] = VTGlobalStatusModel.shared.userInfoModel.userId
+            }
             log["ts"] = Date.timestampString()
             log["act"] = action
             self.addLog(log: log, logCache: cache)

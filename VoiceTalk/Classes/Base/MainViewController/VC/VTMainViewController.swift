@@ -45,9 +45,16 @@ class VTMainViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.mainVM.checkAppVersion();
-        commonReques()
+//        commonReques()
 //        testRoute()
+        testAnalysis()
     }
+    
+    func testAnalysis() {
+        VTAnalysisManager.shared.vtLogWithAction(action: "测试上报log")
+//        VTAnalysisReportNetManager.shared.urlSessionPost()
+    }
+    
     func commonReques() {
         let url = "feed/lookscollect"
         let parameters = [

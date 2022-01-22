@@ -136,6 +136,7 @@
 		C8906ACB2797B53B009A66EB /* VTAnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8906ACA2797B53A009A66EB /* VTAnalysisManager.swift */; };
 		C8906ACD2797B54B009A66EB /* VTLogCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8906ACC2797B54B009A66EB /* VTLogCache.swift */; };
 		C8906AD92797FA02009A66EB /* NSFileManager+VTFileExist.m in Sources */ = {isa = PBXBuildFile; fileRef = C8906AD82797FA02009A66EB /* NSFileManager+VTFileExist.m */; };
+		C8906AE3279AACD2009A66EB /* VTAnalysisReportNetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8906AE2279AACD2009A66EB /* VTAnalysisReportNetManager.swift */; };
 		C89DB80727803AB3002FEBD2 /* VTAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80627803AB3002FEBD2 /* VTAnimatedTransitioning.swift */; };
 		C89DB80927806907002FEBD2 /* VTAnimationNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80827806907002FEBD2 /* VTAnimationNavigationBar.swift */; };
 		C89DB80B27806C33002FEBD2 /* VTPopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */; };
@@ -310,6 +311,7 @@
 		C8906ACC2797B54B009A66EB /* VTLogCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTLogCache.swift; sourceTree = "<group>"; };
 		C8906AD72797FA02009A66EB /* NSFileManager+VTFileExist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+VTFileExist.h"; sourceTree = "<group>"; };
 		C8906AD82797FA02009A66EB /* NSFileManager+VTFileExist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+VTFileExist.m"; sourceTree = "<group>"; };
+		C8906AE2279AACD2009A66EB /* VTAnalysisReportNetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnalysisReportNetManager.swift; sourceTree = "<group>"; };
 		C89DB80627803AB3002FEBD2 /* VTAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		C89DB80827806907002FEBD2 /* VTAnimationNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTAnimationNavigationBar.swift; sourceTree = "<group>"; };
 		C89DB80A27806C33002FEBD2 /* VTPopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPopAnimation.swift; sourceTree = "<group>"; };
@@ -1117,6 +1119,7 @@
 			children = (
 				C8906ACA2797B53A009A66EB /* VTAnalysisManager.swift */,
 				C8906ACC2797B54B009A66EB /* VTLogCache.swift */,
+				C8906AE2279AACD2009A66EB /* VTAnalysisReportNetManager.swift */,
 			);
 			path = Analysis;
 			sourceTree = "<group>";
@@ -1389,6 +1392,7 @@
 				C87F7CBB27673171009407AE /* VTOpenURLContext.swift in Sources */,
 				221CF1C126462C7300593DF4 /* VTImageViewController.swift in Sources */,
 				22142C68262876A700C3499C /* BackgroundColorAnimation.swift in Sources */,
+				C8906AE3279AACD2009A66EB /* VTAnalysisReportNetManager.swift in Sources */,
 				221D0A5D2632706C009F53DA /* VTBaseNavViewController.swift in Sources */,
 				C89DB8222781C589002FEBD2 /* VTJSBridgeAction.swift in Sources */,
 				C8EC38912785A5F8002A2E17 /* VTNavigationTitleView.swift in Sources */,

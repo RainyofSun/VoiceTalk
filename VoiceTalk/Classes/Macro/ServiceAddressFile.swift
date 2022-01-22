@@ -9,9 +9,11 @@
 import Foundation
 
 /// 测试环境地址
-let DebugServiceAddress = "http://cli-api-huangyibing.lab.niceprivate.com";
+let DebugServiceAddress = "https://api.kkgoo.cn/";
 /// 正式环境地址
 let ReleaseServiceAddress = "https://api.kkgoo.cn/";
+/// log环境地址
+let LogServiceAddress = "http://log.kkgoo.cn/";
 
 #if DEBUG
 let ServiceAddress = DebugServiceAddress;

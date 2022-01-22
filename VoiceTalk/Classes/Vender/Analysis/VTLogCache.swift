@@ -16,14 +16,15 @@ class VTLogCache: NSObject {
     private var isSendingLog: Bool = false
     private var maxSize: Int?
     private var api: String?
-    private let VT_MUST_UPLOAD_NUM: Int = 500
+    fileprivate (set) var VT_MUST_UPLOAD_NUM: Int = 500
     
-    init(logName: String, api: String, maxSize: Int) {
+    init(logName: String, api: String, maxSize: Int = VT_MUST_UPLOAD_NUM) {
         super.init()
         self.logName = logName
         self.maxSize = maxSize
         self.api = api
-        self.logs = NSMutableArray.init(array: NSArray(contentsOfFile: cachePath())!)
+        
+        self.logs = NSMutableArray.init(array: NSArray(contentsOfFile: cachePath()) ?? [])
         self.addSystemNotification()
     }
     
@@ -51,22 +52,20 @@ class VTLogCache: NSObject {
         }
         syncToFile()
         weak var wealSelf = self
-        VTRequest.post(self.api!, parameters: ["logs":self.logs!], callbackQueue: .main, progress: nil) { response in
+        VTAnalysisReportNetManager.shared.vtAnalysisReport(logs: ["logs":self.logs as Any]) { clearCache in
             VTAnalysisManager.shared.runOnIoQueue {
                 wealSelf?.isSendingLog = false
-                if wealSelf?.logs?.count ?? 0 > wealSelf!.VT_MUST_UPLOAD_NUM {
+                if (wealSelf?.logs?.count ?? 0 > wealSelf!.VT_MUST_UPLOAD_NUM) || clearCache {
                     wealSelf?.clearCache()
                 }
             }
-        } failure: { error in
-            
         }
     }
 }
 
 extension VTLogCache {
     func cachePath() -> String {
-        return NSLibraryFolder() + "/\(self.logName!)"
+        return NSSearchPathForDirectoriesInDomains(.libraryDirectory, .userDomainMask, true).first! + "/\(self.logName!)"
     }
     
     func addSystemNotification() {
@@ -104,6 +103,7 @@ extension VTLogCache {
         } catch let error as NSError {
             printLog("删除缓存log 错误" + error.localizedDescription)
         }
+        printLog("<<<<<<<<<<<<< 删除缓存log >>>>>>>>>>>")
     }
     
     @objc func appDidEnterBackground() {
