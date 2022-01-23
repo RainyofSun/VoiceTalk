@@ -52,7 +52,7 @@ class VTWKWebView: WKWebView,UIGestureRecognizerDelegate {
     }
 }
 
-// MARK - UIGestureRecognizerDelegate
+// MARK: - UIGestureRecognizerDelegate
 extension VTWKWebView {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
@@ -143,7 +143,7 @@ extension VTWKWebView {
     }
 }
 
-// MARK - Action
+// MARK: - Action
 extension VTWKWebView {
     @objc func handleLonghPress(sender: UILongPressGestureRecognizer) {
         if sender.state == .began {

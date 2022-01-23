@@ -5,7 +5,10 @@
 //  Created by 刘冉 on 2022/1/21.
 //  Copyright © 2022 macos. All rights reserved.
 //
-
+/*
+ URLSession网络请求
+ https://www.jianshu.com/p/2e749ebc40f0
+ */
 import UIKit
 
 class VTAnalysisReportNetManager: NSObject {
