@@ -18,7 +18,7 @@ class VTLogCache: NSObject {
     private var api: String?
     fileprivate (set) var VT_MUST_UPLOAD_NUM: Int = 500
     
-    init(logName: String, api: String, maxSize: Int = VT_MUST_UPLOAD_NUM) {
+    init(logName: String, api: String, maxSize: Int = 500) {
         super.init()
         self.logName = logName
         self.maxSize = maxSize
